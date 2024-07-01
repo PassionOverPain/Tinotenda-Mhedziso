@@ -1,0 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+.menu
+{
+    position: relative;
+    left: 40px;
+    top:-60%;
+    width:20px;
+    height:260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li
+{
+    position: absolute;
+    left:50%;
+    list-style: none;
+    transform-origin: 180px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(-30px);
+}
+.menu li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height: 60px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i)));  /*Might need to chaneg 8 items*/
+    color: transparent;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.menu.active li a
+{
+    color: var(--clr);
+}
+.menu li a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--clr);
+    transform: rotate(calc(var(--i) * 90deg)) translate(0,25px);
+    transition: height 0.5s, width 0.5s, transform 0.5s;
+    transition-delay: 0s, 0s, 0s;
+}
+.menu.active li a::before
+{
+    width:60px;
+    height: 60px;
+    border: 2px solid var(--clr);
+    box-sizing: border-box;
+    background: #000713;
+    transform: rotate(calc(var(--i) * 90deg)) translate(0px,0px);
+    transition: transform 0.5s, height 0.5s, width 0.5s;
+    transition-delay: 1s, 1.5s, 1.5s;
+    rotate: 135deg;
+}
+.menu.active li:hover a::before
+{
+    background:var(--clr);
+    color: #000713;
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+}
+.menu.active li
+{
+    transform: rotate(calc(360deg / 8 * var(--i)));  /*Might need to chaneg 8 items*/
+    
+}
+.menu li a::after
+{
+    content: '';
+    position: absolute;
+    left:80%;
+    width: 20px;
+    height:2px;
+    background: var(--clr);
+    z-index: -1;
+    transform: rotate(calc(var(--i) * 0deg)) translate(15px,0px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.menu.active li:hover a ion-icon
+{
+    position: relative;
+    color: #000713;
+    z-index: 100000;
+}
+.menuToggle
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size:2em;
+    transition: transform 1.5s;
+}
+.menu.active .menuToggle
+{
+   
+   transform: rotate(315deg);
+   left:800%;
+}
+h1
+{
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 0.02em;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h1 span
+{
+    color:grey;
+    transition: 0.25s;
+}
+h1:hover span
+{
+    color:#0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
+}
+.Contactbtn
+{
+    margin-top: 10%;
+    width: 50%;
+    size: 10%;
+    background-color:transparent;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: #0f0 1.25em soild;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 10em;
+    text-shadow: 
+     0 0 0.125em rgb(3, 182, 146),
+     0 0  0.25em lime ;
+     box-shadow: 
+     inset 0 0 1em lime, 0 0 0.5em lime;
+     position: relative;
+}
+.Contactbtn::before
+{
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    background:limegreen;
+    top:120%;
+    right:0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(30deg) scale(1,0.30);
+    filter: blur(1.5em);
+    opacity: 0.7;
+}
+.Contactbtn::after
+{
+    content: '';
+    position: absolute;
+    top:0%;
+    right:0;
+    left: 0%;
+    bottom: 0%;
+    box-shadow: 0 0 2em 0.5em lime;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+.Contactbtn:hover::after
+{
+    opacity: 1;
+}
+.Contactbtn:hover,.Contactbtn:focus
+{
+    
+    background:#0f0;
+    transform: scale(1.1);
+}
