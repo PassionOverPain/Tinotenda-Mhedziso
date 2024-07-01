@@ -6,7 +6,7 @@
 }
 body
 {
-    color: white;
+    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ h1
 }
 h1 span
 {
-    color:grey;
+    color:white;
     transition: 0.25s;
 }
 h1:hover span
