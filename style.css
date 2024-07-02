@@ -258,7 +258,7 @@ h1:hover span
 }
 .AboutC2
 {
-    flex-basis: 72%;
+    flex-basis: 70%;
 }
 .subTitle
 {
@@ -273,6 +273,9 @@ h1:hover span
 }
 .AboutMe p
 {
+    background-color: #001908;
+    padding: 15px;
+    border-radius: 10px;
     position: absolute;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
@@ -320,6 +323,11 @@ h1:hover span
     color:#0f0;
     font-size: 12px;
     display: inline-block;
+    transition: border 0.5s; /*This is not working the way I want it to*/
+}
+.servicesList div a:hover
+{
+    border-bottom: solid 1px green;
 }
 .servicesList div:hover
 {
@@ -340,7 +348,7 @@ h1:hover span
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap:40px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .project
 {
@@ -403,7 +411,7 @@ h1:hover span
 .btn
 {
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     width: fit-content;
     border: 1px solid #001908;
     padding: 14px;
