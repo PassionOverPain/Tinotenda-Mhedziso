@@ -237,7 +237,7 @@ h1:hover span
 {
 
     text-align: start;
-    background-color: rgb(0, 9, 4);
+    background-color: rgb(0, 5, 4);
     height: 100vh;
     color: #ababab;
     flex-wrap: wrap;
@@ -263,7 +263,7 @@ h1:hover span
 .subTitle
 {
     display: block;
-    color:gray;
+    color:white;
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 5px;
@@ -274,10 +274,16 @@ h1:hover span
 .AboutMe p
 {
     position: absolute;
-    color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     top:5%;
     font-size: 1.5em;
-    
+}
+.Services
+{
+    text-align: start;
+    background-color: rgb(0, 5, 4);
+    height: 100vh;
+    color: #ababab;
+    flex-wrap: wrap;
 }
