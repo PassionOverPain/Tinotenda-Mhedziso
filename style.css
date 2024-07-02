@@ -300,6 +300,7 @@ h1:hover span
     font-size: 20px;
     font-weight: 300;
     border-radius: 10px;
+    cursor: default;
     transition: background-color 0.5s, transform 0.5s;
 }
 .servicesList div ion-icon
@@ -409,4 +410,9 @@ h1:hover span
     border-radius: 6px;
     text-decoration: none;
     color: white;
+    transition: background-color 0.5s;
+}
+.btn:hover
+{
+ background-color: #0f0;
 }
