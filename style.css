@@ -347,7 +347,11 @@ h1:hover span
     position: relative;
     overflow: hidden;
 }
-.work img
+.project img
 {
     width: 100%;
+    border-radius: 10px;
+    border-color: red;
+    border-style: solid;
+    display: block;
 }
