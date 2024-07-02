@@ -239,6 +239,21 @@ h1:hover span
     background-color: hsl(158, 100%, 3%);
     background-image: linear-gradient(rgb(0, 124, 83),rgb(7, 80, 7)) ;
     height: 100vh;
+    color: #ababab;
+    flex-wrap: wrap;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.AboutC1
+{
+    flex-basis: 35%;
+}
+.row img
+{
+    height: 50vh;
 }
 .AboutMe h3
 {
