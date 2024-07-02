@@ -1,4 +1,4 @@
-let menuToggle = document.querySelector('.menuToggle');
+let menuToggle = document.querySelector('.menuToggle'); //This will allow my navbar to have it's items 
 let menu = document.querySelector('.menu');
 menuToggle.onclick = function()
 {
