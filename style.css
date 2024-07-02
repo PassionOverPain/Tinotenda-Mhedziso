@@ -282,7 +282,6 @@ h1:hover span
 .Services
 {
     text-align: start;
-    background-color: rgb(0, 5, 4);
     height: 100vh;
     color: #ababab;
     flex-wrap: wrap;
@@ -293,4 +292,12 @@ h1:hover span
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap:40px;
     margin-top: 50px;
+}
+.servicesList div
+{
+    background: #262626;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 10px;
 }
