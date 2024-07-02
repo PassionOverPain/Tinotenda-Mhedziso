@@ -36,6 +36,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100000;  /*This is what I was looking for ;)*/
 }
 .menu li
 {
@@ -57,7 +58,7 @@ body
     height: 60px;
     font-size: 1.5em;
     border-radius: 50%;
-    transform: rotate(calc(360deg / -8 * var(--i)));  /*Might need to chaneg 8 items*/
+    transform: rotate(calc(360deg / -8 * var(--i)));  /*Might need to change 8 items*/
     color: transparent;
     transition: 1s;
     transition-delay: 0.5s;
@@ -104,7 +105,7 @@ body
 }
 .menu.active li
 {
-    transform: rotate(calc(360deg / 8 * var(--i)));  /*Might need to chaneg 8 items*/
+    transform: rotate(calc(360deg / 8 * var(--i)));  /*Might need to change 8 items*/
     
 }
 .menu li a::after
@@ -259,7 +260,7 @@ h1:hover span
 {
     flex-basis: 72%;
 }
-.AboutMe h3
+.subTitle
 {
     display: block;
     color:gray;
