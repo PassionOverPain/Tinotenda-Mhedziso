@@ -351,12 +351,8 @@ h1:hover span
 {
     width: 100%;
     border-radius: 10px;
-    border-color: lime;
-    border-style: solid;
     display: block;
     transition: transform 0.5s;
-    box-sizing: border-box;
-    box-shadow: #001908;
 }
 .layer
 {
@@ -402,4 +398,15 @@ h1:hover span
 .project:hover .layer
 {
     height: 100%;
+}
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #001908;
+    padding: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
 }
