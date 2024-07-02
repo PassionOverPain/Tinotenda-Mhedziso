@@ -334,3 +334,20 @@ h1:hover span
     color: #ababab;
     flex-wrap: wrap;
 }
+.projectsList
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.project
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img
+{
+    width: 100%;
+}
