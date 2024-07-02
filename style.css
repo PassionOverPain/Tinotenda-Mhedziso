@@ -295,9 +295,24 @@ h1:hover span
 }
 .servicesList div
 {
-    background: #262626;
-    padding: 40px;
+    background-color: rgb(1, 44, 36);
+    padding: 30px;
     font-size: 20px;
     font-weight: 300;
     border-radius: 10px;
+}
+.servicesList div ion-icon
+{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.servicesList div h2
+{
+    font-size: 30px;
+    font-weight: 1000;
+}
+.servicesList div a
+{
+    text-decoration: none;
+    color:#0f0;
 }
