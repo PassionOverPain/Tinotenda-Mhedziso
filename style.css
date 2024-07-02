@@ -7,17 +7,19 @@
 body
 {
     color: gray;
-    display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #000000;
+    margin: 0;
+    padding: 0;
 }
+
 .menu
 {
-    position: relative;
-    left: 40px;
-    top:-60%;
+    margin: 0;
+    position: fixed;
+    left: 75vw;
+    top:-10vh;
     width:20px;
     height:260px;
     display: flex;
@@ -26,6 +28,7 @@ body
 }
 .menu li
 {
+    
     position: absolute;
     left:50%;
     list-style: none;
@@ -48,8 +51,14 @@ body
     transition: 1s;
     transition-delay: 0.5s;
 }
+.menu.active
+{
+    left:50%;
+    top: 30%;
+}
 .menu.active li a
 {
+
     color: var(--clr);
 }
 .menu li a::before
@@ -128,6 +137,14 @@ body
    transform: rotate(315deg);
    left:800%;
 }
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
 h1
 {
     position: relative;
@@ -203,4 +220,33 @@ h1:hover span
     
     background:#0f0;
     transform: scale(1.1);
+}
+.AboutMe
+{
+
+    text-align: start;
+    background-color: hsl(158, 100%, 3%);
+    background-image: linear-gradient(rgb(0, 124, 83),rgb(7, 80, 7)) ;
+    height: 100vh;
+}
+.AboutMe h3
+{
+    display: inline;
+    color:black;
+    font-size: 3em;
+    background-image: linear-gradient(rgb(0, 124, 83),darkgreen) ;
+    margin-bottom: 10px;
+    padding: 0.5%;
+    position: relative;
+    top:0.5%;
+}
+.AboutMe p
+{
+    position: absolute;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    top:5%;
+    font-size: 1.8em;
+    
 }
