@@ -236,8 +236,7 @@ h1:hover span
 {
 
     text-align: start;
-    background-color: hsl(158, 100%, 3%);
-    background:black ;
+    background-color: rgb(0, 9, 4);
     height: 100vh;
     color: #ababab;
     flex-wrap: wrap;
@@ -249,7 +248,7 @@ h1:hover span
 }
 .AboutC1
 {
-    flex-basis: 35%;
+    flex-basis: 25%;
 }
 .row img
 {
@@ -258,16 +257,15 @@ h1:hover span
 }
 .AboutC2
 {
-    flex-basis: 60%;
+    flex-basis: 72%;
 }
 .AboutMe h3
 {
     display: block;
-    color:black;
+    color:gray;
     font-size: 3em;
     font-weight: 600;
-    background-image: linear-gradient(rgb(0, 124, 83),darkgreen) ;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 0.5%;
     position: relative;
     top:0.5%;
@@ -279,6 +277,6 @@ h1:hover span
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     top:5%;
-    font-size: 1.8em;
+    font-size: 1.5em;
     
 }
