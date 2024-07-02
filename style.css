@@ -237,7 +237,7 @@ h1:hover span
 
     text-align: start;
     background-color: hsl(158, 100%, 3%);
-    background-image: linear-gradient(rgb(0, 124, 83),rgb(7, 80, 7)) ;
+    background:black ;
     height: 100vh;
     color: #ababab;
     flex-wrap: wrap;
@@ -253,13 +253,19 @@ h1:hover span
 }
 .row img
 {
-    height: 50vh;
+    width: 100%;
+    border-radius: 15px;
+}
+.AboutC2
+{
+    flex-basis: 60%;
 }
 .AboutMe h3
 {
-    display: inline;
+    display: block;
     color:black;
     font-size: 3em;
+    font-weight: 600;
     background-image: linear-gradient(rgb(0, 124, 83),darkgreen) ;
     margin-bottom: 10px;
     padding: 0.5%;
