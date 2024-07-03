@@ -431,5 +431,18 @@ h1:hover span
     text-align: start;
     height: 30vh;
     color: #ababab;
-    flex-wrap: wrap;
+    display:block;
+    text-align: center;
+
+}
+.Contact h3
+{
+    display: block;
+    flex-basis: 60%;
+}
+.Contact a
+{
+    
+    text-decoration: none;
+    color: #0f0;
 }
