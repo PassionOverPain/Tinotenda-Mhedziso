@@ -21,7 +21,7 @@ body
     height: 15vh;
     top:0vh;
     color:lime;
-    text-align: start;
+    display: inline-block;
     font-size: 2em;
 }
 
@@ -65,7 +65,7 @@ body
 }
 .menu.active
 {
-    left:50%;
+    left:35%;
     top: 30%;
 }
 .menu.active li a
@@ -254,7 +254,7 @@ h1:hover span
 .row img
 {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50%;
 }
 .AboutC2
 {
@@ -451,12 +451,13 @@ h1:hover span
 {
    font-size: 70px;
    display: inline-block;
+   margin-top: 1%;
 }
 
 .Copyright
 {
     color: white;
     position: relative;
-    margin-top: 2%;
+    margin-top: 1%;
     
 }
