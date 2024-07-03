@@ -445,4 +445,16 @@ h1:hover span
     
     text-decoration: none;
     color: #0f0;
+    font-size: 1.2em;
+}
+.Contact a ion-icon
+{
+    width:60px;
+    height:60px;
+}
+
+.Copyright
+{
+    color: white;
+    
 }
