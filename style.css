@@ -429,7 +429,7 @@ h1:hover span
     background-color: #001908;
     padding: 2px 0;
     text-align: start;
-    height: 30vh;
+    height: 40vh;
     color: #ababab;
     display:block;
     text-align: center;
@@ -442,19 +442,21 @@ h1:hover span
 }
 .Contact a
 {
-    
+    display: inline-block;
     text-decoration: none;
     color: #0f0;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
-.Contact a ion-icon
+.Social-Icons a
 {
-    width:60px;
-    height:60px;
+   font-size: 70px;
+   display: inline-block;
 }
 
 .Copyright
 {
     color: white;
+    position: relative;
+    margin-top: 2%;
     
 }
