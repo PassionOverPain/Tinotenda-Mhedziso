@@ -424,3 +424,12 @@ h1:hover span
 {
  background-color: #0f0;
 }
+.Contact
+{
+    background-color: #001908;
+    padding: 2px 0;
+    text-align: start;
+    height: 50vh;
+    color: #ababab;
+    flex-wrap: wrap;
+}
