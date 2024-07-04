@@ -465,6 +465,7 @@ h1:hover span
 {
     #Me
     {
-        font-size: 0.1em;
+        font-size: 1.1em;
+        text-align: center;
     }
 }
