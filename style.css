@@ -287,6 +287,14 @@ h1:hover span
     font-size: 1.9rem;
     color:#fff;
 }
+.View
+{
+    display: none;
+}
+.View.Activeview
+{
+    display: block;
+}
 #TechStack
 {
     cursor: pointer;
