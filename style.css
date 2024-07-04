@@ -475,8 +475,10 @@ h1:hover span
     }
     .menu.active
     {
-        left:35%;
+        left:0%;
         top: 30%;
+        font-size: 0.9em;
+        
     }
     .AboutC1 img
     {
