@@ -147,7 +147,7 @@ body
 {
    
    transform: rotate(315deg);
-   left:800%;
+   left:200%;
 }
 header
 {
@@ -465,13 +465,21 @@ h1:hover span
 {
     #Me
     {
-        font-size: 1.1em;
+        font-size: 0.9em;
         text-align: center;
     }
     .menu
     {
         left:72vw;
         top:-10vh;
+    }
+    .menu li
+    {
+        transform-origin: 145px;
+    }
+    .menu.active .menuToggle
+    {
+       left:400%;
     }
     .menu.active 
     {
@@ -481,8 +489,8 @@ h1:hover span
     }
     .menu.active li a::before
     {
-        width:60px;
-        height: 60px;
+        width:40px;
+        height: 40px;
     }
     
     .AboutC1 img
