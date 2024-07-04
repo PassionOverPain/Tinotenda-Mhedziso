@@ -454,6 +454,10 @@ h1:hover span
 /*------------------------------------Responsive Design--------------------------------------------------------*/
 @media only screen and (max-width: 600px)
 {
+    .header
+    {
+        display: inline-block;
+    }
     #Me
     {
         font-size: 0.9em;
@@ -496,6 +500,13 @@ h1:hover span
     .subTitle
     {
         font-size: 1.9em;
+    }
+    .row
+    {
+     display: inline-block;
+     justify-content: center;
+     text-align: center;
+     height: 100vh;
     }
     .AboutC1,.AboutC2
     {
