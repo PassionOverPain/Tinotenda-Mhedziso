@@ -286,6 +286,14 @@ h1:hover span
     font-size: 1.9rem;
     color:#fff;
 }
+.Extra span
+{
+    margin-left: 15px;
+}
+.View ul
+{
+    list-style: none;
+}
 .Services
 {
     text-align: start;
