@@ -138,7 +138,7 @@ body
 {
    
    transform: rotate(315deg);
-   left:200%;
+   left:800%;
 }
 header
 {
@@ -233,15 +233,17 @@ h1:hover span
     height: 100vh;
     color: #ababab;
     flex-wrap: wrap;
+    overflow:hidden;
 }
 .row
 {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 .AboutC1
 {
-    flex-basis: 25%;
+    flex-basis: 25%; 
 }
 .row img
 {
@@ -268,11 +270,12 @@ h1:hover span
     background-color: #001908;
     padding: 15px;
     border-radius: 10px;
-    position: absolute;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     top:5%;
-    font-size: 1.5em;
+    font-size: 1.1rem;
+    height:fit-content;
+    overflow:hidden;  /*This is an issue*/
 }
 .Services
 {
@@ -284,11 +287,9 @@ h1:hover span
 .servicesList
 {
     display: grid;
-    position: relative; /*Changed this*/
-    grid-template-columns: repeat(auto-fit,minmax(99vw,1fr));
-    grid-gap:10px;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    grid-gap:1rem;
     margin-top: 50px;
-   
 }
 .servicesList div
 {
@@ -512,31 +513,33 @@ h1:hover span
     }
     .AboutC1,.AboutC2
     {
-        flex-basis: 100%; 
+        flex-basis: 100%;
+        
     }
     .AboutMe p
     {
-        height: 70vh;
         font-size: 0.6em;
-        display: inline-block;
     }
     .servicesList
     {
-        height: 70vh;
+    grid-template-columns: repeat(1fr,minmax(100vw,1fr));
+    display: grid;
+    overflow: hidden;
     }
     .servicesList div
     {
-        width: 100vw;
-        height: 70vh;
-        font-size: 1em;
+        display: inline-block;
+        padding: 10px;
+        font-size: 0.2em;
+        width:min-content;
     }
     .servicesList div ion-icon
     {
         font-size: 20px;
     }
-    .container
+    .servicesList div h2 
     {
-        display: inline-block;
-        height: 100vh;
+        font-size: 10px;
     }
+
 }
