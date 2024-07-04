@@ -473,13 +473,18 @@ h1:hover span
         left:72vw;
         top:-10vh;
     }
-    .menu.active
+    .menu.active 
     {
         left:0%;
         top: 30%;
         font-size: 0.9em;
-        
     }
+    .menu.active li a::before
+    {
+        width:60px;
+        height: 60px;
+    }
+    
     .AboutC1 img
     {
 
