@@ -156,6 +156,7 @@ header
     align-items: center;
     position: relative;
     height: 100vh;
+
 }
 h1
 {
@@ -458,4 +459,12 @@ h1:hover span
 {
     color: white;
     position: relative;  
+}
+/*------------------------------------Responsive Design--------------------------------------------------------*/
+@media only screen and (max-width: 600px)
+{
+    #Me
+    {
+        font-size: 0.1em;
+    }
 }
