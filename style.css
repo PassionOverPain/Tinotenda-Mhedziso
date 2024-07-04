@@ -281,14 +281,35 @@ h1:hover span
 {   
 
     margin-top: 30px;
+    margin-bottom: 30px;
     position: relative;
     display: inline-block;
     font-size: 1.9rem;
     color:#fff;
 }
-.Extra span
+#TechStack
 {
-    margin-left: 15px;
+    cursor: pointer;
+}
+#Education, #Experience
+{
+    margin-left: 25px;
+    cursor:pointer
+}
+.Viewpoint::after
+{
+    content: '';
+    width:0px;
+    height: 3px;
+    background: #0f0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.Viewpoint.Activepoint::after
+{
+    width: 30%;
 }
 .View ul
 {
