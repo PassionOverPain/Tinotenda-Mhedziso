@@ -475,15 +475,15 @@ h1:hover span
     }
     .menu li
     {
-        transform-origin: 145px;
+        transform-origin: 125px;
     }
     .menu.active .menuToggle
     {
-       left:400%;
+       left:500%;
     }
     .menu.active 
     {
-        left:0%;
+        left:-3%;
         top: 30%;
         font-size: 0.9em;
     }
