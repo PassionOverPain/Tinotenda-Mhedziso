@@ -297,12 +297,18 @@ h1:hover span
 }
 #TechStack
 {
+    margin-right: 20px;
     cursor: pointer;
 }
-#Education, #Experience
+#Education
 {
     margin-left: 25px;
-    cursor:pointer
+    cursor:pointer;
+}
+#Experience
+{
+    margin-left: 25px;
+    cursor:pointer;
 }
 .Viewpoint::after
 {
