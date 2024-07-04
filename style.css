@@ -470,7 +470,13 @@ h1:hover span
     }
     .menu
     {
-        left:90vw;
+        left:72vw;
+        top:-10vh;
+    }
+    .menu.active
+    {
+        left:35%;
+        top: 30%;
     }
     .AboutC1 img
     {
