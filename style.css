@@ -138,7 +138,7 @@ body
 {
    
    transform: rotate(315deg);
-   left:200%;
+   left:800%;
 }
 header
 {
@@ -284,11 +284,9 @@ h1:hover span
 .servicesList
 {
     display: grid;
-    position: relative; /*Changed this*/
-    grid-template-columns: repeat(auto-fit,minmax(99vw,1fr));
-    grid-gap:10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
     margin-top: 50px;
-   
 }
 .servicesList div
 {
@@ -517,26 +515,7 @@ h1:hover span
     .AboutMe p
     {
         height: 70vh;
-        font-size: 0.6em;
+        font-size: 0.em;
         display: inline-block;
-    }
-    .servicesList
-    {
-        height: 70vh;
-    }
-    .servicesList div
-    {
-        width: 100vw;
-        height: 70vh;
-        font-size: 1em;
-    }
-    .servicesList div ion-icon
-    {
-        font-size: 20px;
-    }
-    .container
-    {
-        display: inline-block;
-        height: 100vh;
     }
 }
