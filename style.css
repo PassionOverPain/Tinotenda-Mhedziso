@@ -238,10 +238,11 @@ h1:hover span
 {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 .AboutC1
 {
-    flex-basis: 25%;
+    flex-basis: 25%; 
 }
 .row img
 {
@@ -268,11 +269,12 @@ h1:hover span
     background-color: #001908;
     padding: 15px;
     border-radius: 10px;
-    position: absolute;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     top:5%;
     font-size: 1.5em;
+    height:100vh;
+    overflow: hidden;  /*This is an issue*/
 }
 .Services
 {
@@ -510,12 +512,13 @@ h1:hover span
     }
     .AboutC1,.AboutC2
     {
-        flex-basis: 100%; 
+        flex-basis: 100%;
+        
     }
     .AboutMe p
     {
         height: 70vh;
-        font-size: 0.em;
+        font-size: 0.6em;
         display: inline-block;
     }
 }
