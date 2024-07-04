@@ -284,9 +284,9 @@ h1:hover span
 .servicesList
 {
     display: grid;
-    position: relative;
+    position: relative; /*Changed this*/
     grid-template-columns: repeat(auto-fit,minmax(99vw,1fr));
-    grid-gap:40px;
+    grid-gap:10px;
     margin-top: 50px;
    
 }
@@ -520,9 +520,23 @@ h1:hover span
         font-size: 0.6em;
         display: inline-block;
     }
+    .servicesList
+    {
+        height: 70vh;
+    }
     .servicesList div
     {
         width: 100vw;
-        height: fit-content;
+        height: 70vh;
+        font-size: 1em;
+    }
+    .servicesList div ion-icon
+    {
+        font-size: 20px;
+    }
+    .container
+    {
+        display: inline-block;
+        height: 100vh;
     }
 }
