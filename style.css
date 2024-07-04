@@ -273,8 +273,8 @@ h1:hover span
     position: relative;
     top:5%;
     font-size: 1.5em;
-    height:100vh;
-    overflow: hidden;  /*This is an issue*/
+    height:82vh;
+    overflow:hidden;  /*This is an issue*/
 }
 .Services
 {
