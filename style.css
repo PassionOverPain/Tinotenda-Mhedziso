@@ -461,8 +461,8 @@ h1:hover span
     }
     .menu
     {
-        left:72vw;
-        top:-10vh;
+        left:85vw;
+        top:-20vh;
     }
     .menu li
     {
@@ -485,12 +485,20 @@ h1:hover span
     }
     .menu li a::after
     {
-        width : 0;
-        height:0;
+       display: none;
     }
     
-    .AboutC1 img
+    .row img
     {
-
+        width: 35vw;
+        border-radius: 50%;
+    }
+    .subTitle
+    {
+        font-size: 1.9em;
+    }
+    .AboutC1,.AboutC2
+    {
+        flex-basis: 100%;
     }
 }
