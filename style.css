@@ -8,7 +8,7 @@ body
 {
     color: gray;
     align-items: center;
-    min-height: 100vh;
+    min-height:fit-content;
     background: #000000;
     margin: 0;
     padding: 0;
@@ -227,19 +227,19 @@ h1:hover span
 }
 .AboutMe
 {
-
+  
     text-align: start;
     background-color: rgb(0, 5, 4);
-    height: 100vh;
+    height: fit-content;
     color: #ababab;
     flex-wrap: wrap;
-    overflow:hidden;
+
 }
 .row
 {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: fit-content;
 }
 .AboutC1
 {
@@ -275,14 +275,23 @@ h1:hover span
     top:5%;
     font-size: 1.1rem;
     height:fit-content;
-    overflow:hidden;  /*This is an issue*/
+
+}
+.Extra
+{   
+
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.9rem;
+    color:#fff;
 }
 .Services
 {
     text-align: start;
-    height: 100vh;
+    height: fit-content;
     color: #ababab;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .servicesList
 {
@@ -293,6 +302,8 @@ h1:hover span
 }
 .servicesList div
 {
+    width:fit-content;
+    position: relative;
     background-color: #001908;
     padding: 30px;
     font-size: 20px;
@@ -334,7 +345,7 @@ h1:hover span
     background-color: rgb(0, 5, 4);
     padding: 2px 0;
     text-align: start;
-    height: 100vh;
+    height: fit-content;
     color: #ababab;
     flex-wrap: wrap;
 }
@@ -423,11 +434,11 @@ h1:hover span
 {
     background-color: #001908;
     padding: 2px 0;
-    text-align: start;
-    height: 40vh;
+    height: fit-content;
     color: #ababab;
     display:block;
     text-align: center;
+    position: relative;
 
 }
 .Contact h3
@@ -468,7 +479,7 @@ h1:hover span
     }
     .menu
     {
-        left:85vw;
+        left:88vw;
         top:-20vh;
     }
     .menu li
@@ -481,7 +492,7 @@ h1:hover span
     }
     .menu.active 
     {
-        left:-3%;
+        left:2vw;
         top: 30%;
         font-size: 0.9em;
     }
@@ -509,7 +520,11 @@ h1:hover span
      display: inline-block;
      justify-content: center;
      text-align: center;
-     height: 100vh;
+     height: fit-content;
+    }
+    .AboutMe
+    {
+        height:fit-content;
     }
     .AboutC1,.AboutC2
     {
@@ -520,26 +535,46 @@ h1:hover span
     {
         font-size: 0.6em;
     }
+    .Services
+    {
+        height: fit-content;
+    }
+    .Projects
+    {
+        height: fit-content;
+    }
+    .project 
+    {
+        width:100%;
+        height: fit-content;
+    }
     .servicesList
     {
-    grid-template-columns: repeat(1fr,minmax(100vw,1fr));
-    display: grid;
-    overflow: hidden;
+    display:grid;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+
     }
     .servicesList div
     {
         display: inline-block;
         padding: 10px;
-        font-size: 0.2em;
-        width:min-content;
+        font-size: 0.7em;
+        width:fit-content;
     }
     .servicesList div ion-icon
     {
-        font-size: 20px;
+        font-size: 40px;
     }
     .servicesList div h2 
     {
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .Contact
+    {
+        position: relative;
+        font-size: 0.6rem;
     }
 
 }
