@@ -368,6 +368,7 @@ h1:hover span
 {
     font-size: 30px;
     font-weight: 1000;
+    color: #fff;
 }
 .servicesList div a
 {
@@ -574,6 +575,11 @@ h1:hover span
         width: 100vw;
         font-size: 0.8rem;
         align-items: center;
+        justify-content: center;
+    }
+    .View
+    {
+        font-size: 0.5rem;
     }
     .AboutMe
     {
