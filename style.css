@@ -8,13 +8,16 @@ body
 {
     color: gray;
     align-items: center;
-    min-height: 100vh;
+    min-height:fit-content;
     background: #000000;
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-
+html /* Very useful simple line of code down below ✔*/
+{
+    scroll-behavior: smooth;
+}
 
 .menu
 {
@@ -227,19 +230,24 @@ h1:hover span
 }
 .AboutMe
 {
-
+  
     text-align: start;
     background-color: rgb(0, 5, 4);
-    height: 100vh;
+    height: fit-content;
     color: #ababab;
     flex-wrap: wrap;
-    overflow:hidden;
+    opacity: 0; /*Added this*/
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+
+   
 }
 .row
 {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: fit-content;
 }
 .AboutC1
 {
@@ -275,14 +283,70 @@ h1:hover span
     top:5%;
     font-size: 1.1rem;
     height:fit-content;
-    overflow:hidden;  /*This is an issue*/
+
+}
+.Extra
+{   
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    font-size: 1.9rem;
+    color:#fff;
+}
+.View
+{
+    display: none;
+    position: relative;
+}
+.View.Activeview
+{
+    display: block;
+}
+#TechStack
+{
+    margin-right: 20px;
+    cursor: pointer;
+}
+#Education
+{
+    margin-left: 25px;
+    cursor:pointer;
+}
+#Experience
+{
+    margin-left: 25px;
+    cursor:pointer;
+}
+.Viewpoint::after
+{
+    content: '';
+    width:0px;
+    height: 3px;
+    background: #0f0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.Viewpoint.Activepoint::after
+{
+    width: 100%;
+}
+.View ul
+{
+    list-style: none;
 }
 .Services
 {
     text-align: start;
-    height: 100vh;
+    height: fit-content;
     color: #ababab;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    opacity: 0; /*Added this*/
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
 .servicesList
 {
@@ -293,6 +357,8 @@ h1:hover span
 }
 .servicesList div
 {
+    width:fit-content;
+    position: relative;
     background-color: #001908;
     padding: 30px;
     font-size: 20px;
@@ -311,6 +377,7 @@ h1:hover span
 {
     font-size: 30px;
     font-weight: 1000;
+    color: #fff;
 }
 .servicesList div a
 {
@@ -334,9 +401,13 @@ h1:hover span
     background-color: rgb(0, 5, 4);
     padding: 2px 0;
     text-align: start;
-    height: 100vh;
+    height: fit-content;
     color: #ababab;
     flex-wrap: wrap;
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
 .projectsList
 {
@@ -423,11 +494,12 @@ h1:hover span
 {
     background-color: #001908;
     padding: 2px 0;
-    text-align: start;
-    height: 40vh;
+    height: fit-content;
     color: #ababab;
     display:block;
     text-align: center;
+    position: relative;
+    
 
 }
 .Contact h3
@@ -454,8 +526,30 @@ h1:hover span
     color: white;
     position: relative;  
 }
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+#Anime
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20%;
+    width: 50%;
+    size: 10%;
+    background-color:transparent;
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    border:#001908 1.25em soild;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 10em;
+}
 /*------------------------------------Responsive Design--------------------------------------------------------*/
-@media only screen and (max-width: 600px)
+@media only screen  and (min-width: 251px) and (max-width: 600px) /* 250px optimisation to come */
 {
     .header
     {
@@ -468,7 +562,7 @@ h1:hover span
     }
     .menu
     {
-        left:85vw;
+        left:88vw;
         top:-20vh;
     }
     .menu li
@@ -481,7 +575,7 @@ h1:hover span
     }
     .menu.active 
     {
-        left:-3%;
+        left:2vw;
         top: 30%;
         font-size: 0.9em;
     }
@@ -508,38 +602,76 @@ h1:hover span
     {
      display: inline-block;
      justify-content: center;
+     width:100vw ;
      text-align: center;
-     height: 100vh;
+     height: fit-content;
+    }
+    .Extra
+    {
+        width: 100vw;
+        font-size: 0.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .View
+    {
+        font-size: 0.5rem;
+    }
+    .AboutMe
+    {
+        width: 100%;
+        height:fit-content;
     }
     .AboutC1,.AboutC2
     {
         flex-basis: 100%;
-        
     }
     .AboutMe p
     {
         font-size: 0.6em;
     }
+    .Services
+    {
+        text-align: center;
+        height: fit-content;
+    }
+    .Projects
+    {
+        text-align: center;
+        height: fit-content;
+    }
+    .project 
+    {
+        width:100%;
+        height: fit-content;
+    }
     .servicesList
     {
-    grid-template-columns: repeat(1fr,minmax(100vw,1fr));
-    display: grid;
-    overflow: hidden;
+    display:grid;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+
     }
     .servicesList div
     {
         display: inline-block;
         padding: 10px;
-        font-size: 0.2em;
-        width:min-content;
+        font-size: 0.7em;
+        width:fit-content;
     }
     .servicesList div ion-icon
     {
-        font-size: 20px;
+        font-size: 40px;
     }
     .servicesList div h2 
     {
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .Contact
+    {
+        position: relative;
+        font-size: 0.6rem;
     }
 
 }
