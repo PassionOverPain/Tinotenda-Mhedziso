@@ -21,26 +21,11 @@ for(viewpoint of viewpoints)
     event.currentTarget.classList.add("Activepoint");
     document.getElementById(thingy).classList.add("Activeview");
 }
-let anime = true;
-const button = document.getElementById('Anime');
-button.addEventListener("click",animate);
-function animate()
-{
-  if(anime)
-    {
-        anime = false
-        window.prompt(`It is ${anime}`);
-      
-    }
-    else
-    {
-        anime = true;
-        window.prompt(`It is ${anime}`);
-    }
-}
 
-if(anime)
-{
+// const button = document.getElementById('Anime');
+// button.addEventListener("click",animate);
+
+// if(anime)
  let house = {
    observer :  new IntersectionObserver((entries) =>
 {
@@ -59,11 +44,10 @@ if(anime)
 }),
  hiddenElements : document.querySelectorAll('.Projects, .AboutMe, .Services')
  }
-hiddenElements.forEach((el) => observer.observe(el));
-}
-else
-{
-  delete house.observer
-   delete house.hiddenElements
-
-}
+house.hiddenElements.forEach((el) => house.observer.observe(el));
+// else
+// {
+//   delete house.observer;
+//   delete house.hiddenElements
+//   window.alert('Should be deleting');
+// }
