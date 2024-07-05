@@ -22,17 +22,22 @@ for(viewpoint of viewpoints)
     document.getElementById(thingy).classList.add("Activeview");
 }
 let anime = true;
+const button = document.getElementById('Anime');
+button.addEventListener("click",animate);
 function animate()
 {
-    if(anime)
+  if(anime)
     {
-        anime = false;
+        anime = false
+        window.prompt('It is false');
     }
     else
     {
         anime = true;
+        window.prompt('It is true')
     }
 }
+
 if(anime)
 {
 const observer = new IntersectionObserver((entries) =>
@@ -52,20 +57,4 @@ const observer = new IntersectionObserver((entries) =>
 });
 const hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
 hiddenElements.forEach((el) => observer.observe(el));
-}
-else
-{
-    const observer = new IntersectionObserver((entries) =>
-        {
-            entries.forEach((entry) => 
-            {
-                console.log(entry)
-                if(entry.isIntersecting)
-                    {
-                        entry.target.classList.add('show');
-                    }
-            });
-        });
-        const hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
-        hiddenElements.forEach((el) => observer.observe(el));
 }
