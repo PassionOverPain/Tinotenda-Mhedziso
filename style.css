@@ -549,7 +549,7 @@ h1:hover span
     border-radius: 10em;
 }
 /*------------------------------------Responsive Design--------------------------------------------------------*/
-@media only screen  and (min-width: 251px) and (max-width: 600px)
+@media only screen  and (min-width: 251px) and (max-width: 600px) /* 250px optimisation to come */
 {
     .header
     {
@@ -625,8 +625,6 @@ h1:hover span
     .AboutC1,.AboutC2
     {
         flex-basis: 100%;
-        
-        
     }
     .AboutMe p
     {
