@@ -238,6 +238,12 @@ h1:hover span
     flex-wrap: wrap;
     opacity: 0; /*Added this*/
     transition: all 1s;
+   
+}
+.hidden
+{
+    opacity: 0; /*Added this*/
+    transition: all 1s;
 }
 .show
 {
@@ -343,7 +349,7 @@ h1:hover span
     height: fit-content;
     color: #ababab;
     flex-wrap:wrap;
-    opacity: 0;
+    opacity: 0; /*Added this*/
     transition: all 1s;
 }
 .servicesList
