@@ -238,12 +238,10 @@ h1:hover span
     flex-wrap: wrap;
     opacity: 0; /*Added this*/
     transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+
    
-}
-.hidden
-{
-    opacity: 0; /*Added this*/
-    transition: all 1s;
 }
 .row
 {
@@ -347,6 +345,8 @@ h1:hover span
     flex-wrap:wrap;
     opacity: 0; /*Added this*/
     transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
 .servicesList
 {
@@ -406,6 +406,8 @@ h1:hover span
     flex-wrap: wrap;
     opacity: 0;
     transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
 .projectsList
 {
@@ -526,7 +528,18 @@ h1:hover span
 .show
 {
     opacity: 1;
-    background-color: red;
+    filter: blur(0);
+    transform: translateX(0);
+}
+#Anime
+{
+    position: relative;
+    left: 50px;
+    display: inline-block;
+    background-color:#001908;
+    border-radius: 15px;
+    color: #0f0;
+    padding: 10px;
 }
 /*------------------------------------Responsive Design--------------------------------------------------------*/
 @media only screen and (max-width: 600px)

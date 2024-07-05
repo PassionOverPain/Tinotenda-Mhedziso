@@ -21,6 +21,20 @@ for(viewpoint of viewpoints)
     event.currentTarget.classList.add("Activepoint");
     document.getElementById(thingy).classList.add("Activeview");
 }
+let anime = true;
+function animate()
+{
+    if(anime)
+    {
+        anime = false;
+    }
+    else
+    {
+        anime = true;
+    }
+}
+if(anime)
+{
 const observer = new IntersectionObserver((entries) =>
 {
     entries.forEach((entry) => 
@@ -36,5 +50,22 @@ const observer = new IntersectionObserver((entries) =>
             }
     });
 });
-const hiddenElements = document.querySelectorAll('.Projetcs, .AboutMe');
+const hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
 hiddenElements.forEach((el) => observer.observe(el));
+}
+else
+{
+    const observer = new IntersectionObserver((entries) =>
+        {
+            entries.forEach((entry) => 
+            {
+                console.log(entry)
+                if(entry.isIntersecting)
+                    {
+                        entry.target.classList.add('show');
+                    }
+            });
+        });
+        const hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
+        hiddenElements.forEach((el) => observer.observe(el));
+}
