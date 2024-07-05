@@ -21,33 +21,47 @@ for(viewpoint of viewpoints)
     event.currentTarget.classList.add("Activepoint");
     document.getElementById(thingy).classList.add("Activeview");
 }
-
-// const button = document.getElementById('Anime');
-// button.addEventListener("click",animate);
-
-// if(anime)
- let house = {
-   observer :  new IntersectionObserver((entries) =>
+let anime = true;
+const button = document.getElementById('Anime');
+button.addEventListener("click",animate);
+function animate()
+{
+  if(anime)
+    {
+        anime = false
+        window.prompt(`It is ${anime}`);
+      
+    }
+    else
+    {
+        anime = true;
+        window.prompt(`It is ${anime}`);
+    }
+}
+  
+var observer = new IntersectionObserver((entries) =>
 {
     entries.forEach((entry) => 
     {
-        console.log(entry)
+        if(anime)
+        {
         if(entry.isIntersecting)
             {
                 entry.target.classList.add('show');
             }
-            // else
-            // {
-            //     entry.target.classList.remove('show');
-            // }
+            else
+            {
+                entry.target.classList.remove('show');
+            }
+        }
+        else
+        {
+            if(entry.isIntersecting)
+                {
+                    entry.target.classList.add('show');
+                } 
+        }
     });
-}),
- hiddenElements : document.querySelectorAll('.Projects, .AboutMe, .Services')
- }
-house.hiddenElements.forEach((el) => house.observer.observe(el));
-// else
-// {
-//   delete house.observer;
-//   delete house.hiddenElements
-//   window.alert('Should be deleting');
-// }
+});
+var hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
+hiddenElements.forEach((el) => observer.observe(el));
