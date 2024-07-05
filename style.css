@@ -282,14 +282,14 @@ h1:hover span
 
     margin-top: 30px;
     margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
+    display: flex;
     font-size: 1.9rem;
     color:#fff;
 }
 .View
 {
     display: none;
+    position: relative;
 }
 .View.Activeview
 {
@@ -323,7 +323,7 @@ h1:hover span
 }
 .Viewpoint.Activepoint::after
 {
-    width: 30%;
+    width: 100%;
 }
 .View ul
 {
