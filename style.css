@@ -14,7 +14,10 @@ body
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-
+html /* Very useful simple line of code down below ✔*/
+{
+    scroll-behavior: smooth;
+}
 
 .menu
 {
@@ -562,16 +565,25 @@ h1:hover span
     {
      display: inline-block;
      justify-content: center;
+     width:100vw ;
      text-align: center;
      height: fit-content;
     }
+    .Extra
+    {
+        width: 100vw;
+        font-size: 0.8rem;
+        align-items: center;
+    }
     .AboutMe
     {
+        width: 100%;
         height:fit-content;
     }
     .AboutC1,.AboutC2
     {
         flex-basis: 100%;
+        
         
     }
     .AboutMe p
