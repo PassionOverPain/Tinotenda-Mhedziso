@@ -41,7 +41,8 @@ function animate()
 
 if(anime)
 {
-const observer = new IntersectionObserver((entries) =>
+ let house = {
+   observer :  new IntersectionObserver((entries) =>
 {
     entries.forEach((entry) => 
     {
@@ -55,11 +56,14 @@ const observer = new IntersectionObserver((entries) =>
                 entry.target.classList.remove('show');
             }
     });
-});
-const hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
+}),
+ hiddenElements : document.querySelectorAll('.Projects, .AboutMe, .Services')
+ }
 hiddenElements.forEach((el) => observer.observe(el));
 }
 else
 {
-    delete observer;
+  delete house.observer
+   delete house.hiddenElements
+
 }
