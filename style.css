@@ -598,10 +598,12 @@ h1:hover span
     }
     .Services
     {
+        text-align: center;
         height: fit-content;
     }
     .Projects
     {
+        text-align: center;
         height: fit-content;
     }
     .project 
