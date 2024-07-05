@@ -343,6 +343,8 @@ h1:hover span
     height: fit-content;
     color: #ababab;
     flex-wrap:wrap;
+    opacity: 0;
+    transition: all 1s;
 }
 .servicesList
 {
