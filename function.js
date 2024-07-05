@@ -21,3 +21,20 @@ for(viewpoint of viewpoints)
     event.currentTarget.classList.add("Activepoint");
     document.getElementById(thingy).classList.add("Activeview");
 }
+const observer = new IntersectionObserver((entries) =>
+{
+    entries.forEach((entry) => 
+    {
+        console.log(entry)
+        if(entry.isIntersecting)
+            {
+                entry.target.classList.add('show');
+            }
+            else
+            {
+                entry.target.classList.remove('show');
+            }
+    });
+});
+const hiddenElements = document.querySelectorAll('.AboutMe');
+hiddenElements.forEach((el) => observer.observe(el));
