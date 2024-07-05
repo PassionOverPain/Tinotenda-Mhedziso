@@ -29,12 +29,13 @@ function animate()
   if(anime)
     {
         anime = false
-        window.prompt('It is false');
+        window.prompt(`It is ${anime}`);
+      
     }
     else
     {
         anime = true;
-        window.prompt('It is true')
+        window.prompt(`It is ${anime}`);
     }
 }
 
@@ -57,4 +58,8 @@ const observer = new IntersectionObserver((entries) =>
 });
 const hiddenElements = document.querySelectorAll('.Projects, .AboutMe, .Services');
 hiddenElements.forEach((el) => observer.observe(el));
+}
+else
+{
+    delete observer;
 }
