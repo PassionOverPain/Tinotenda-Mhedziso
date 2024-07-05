@@ -8,7 +8,7 @@ let text = document.querySelector('.myName');
 text.innerHTML = text.innerText.split('').map((letters, i) => `<span style="transition-delay:${ i * 40}ms;">${letters}</span>`).join('');
 var viewpoints = document.getElementsByClassName('Viewpoint');
 var views = document.getElementsByClassName('View');
-function show(thisview)
+function show(thingy) /* YeS... I am naming this variable thingy😀*/
 {
 for(viewpoint of viewpoints)
     {
@@ -19,5 +19,5 @@ for(viewpoint of viewpoints)
             view.classList.remove("Activeview");
         }
     event.currentTarget.classList.add("Activepoint");
-    document.getElementById('View').classList.add("Activeview");
+    document.getElementById(thingy).classList.add("Activeview");
 }
