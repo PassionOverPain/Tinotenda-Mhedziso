@@ -245,10 +245,6 @@ h1:hover span
     opacity: 0; /*Added this*/
     transition: all 1s;
 }
-.show
-{
-    opacity: 1;
-}
 .row
 {
     display: flex;
@@ -408,6 +404,8 @@ h1:hover span
     height: fit-content;
     color: #ababab;
     flex-wrap: wrap;
+    opacity: 0;
+    transition: all 1s;
 }
 .projectsList
 {
@@ -524,6 +522,11 @@ h1:hover span
 {
     color: white;
     position: relative;  
+}
+.show
+{
+    opacity: 1;
+    background-color: red;
 }
 /*------------------------------------Responsive Design--------------------------------------------------------*/
 @media only screen and (max-width: 600px)

@@ -36,6 +36,5 @@ const observer = new IntersectionObserver((entries) =>
             }
     });
 });
-;
-var hiddenElements = document.querySelectorAll('.AboutMe, .Services');
+const hiddenElements = document.querySelectorAll('.Projetcs, .AboutMe');
 hiddenElements.forEach((el) => observer.observe(el));
