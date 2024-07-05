@@ -28,14 +28,14 @@ function animate()
 {
   if(anime)
     {
-        anime = false
-        window.prompt(`It is ${anime}`);
+        anime = false;
+        button.textContent = "Animate✔";
       
     }
     else
     {
         anime = true;
-        window.prompt(`It is ${anime}`);
+        button.textContent = "Animate❌";
     }
 }
   
@@ -56,10 +56,7 @@ var observer = new IntersectionObserver((entries) =>
         }
         else
         {
-            if(entry.isIntersecting)
-                {
                     entry.target.classList.add('show');
-                } 
         }
     });
 });
