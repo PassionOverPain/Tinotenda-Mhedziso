@@ -367,6 +367,7 @@ h1:hover span
     border-radius: 10px;
     cursor: default;
     transition: background-color 0.5s, transform 0.5s;
+    margin-right: 40px;
 }
 .servicesList div ion-icon
 {
