@@ -298,7 +298,7 @@ h1:hover span
 {
     display: none;
     position: relative;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 .View.Activeview
 {
@@ -521,6 +521,10 @@ h1:hover span
    font-size: 70px;
    display: inline-block;
    margin-top: 1%;
+}
+.Social-Icons:hover
+{
+    color:#0f0;
 }
 .Copyright
 {
