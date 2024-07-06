@@ -12,7 +12,7 @@ body
     background: #000000;
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 html /* Very useful simple line of code down below ✔*/
 {
@@ -150,13 +150,15 @@ header
     align-items: center;
     position: relative;
     height: 100vh;
+
 }
 h1
 {
     position: relative;
     font-size: 2em;
     letter-spacing: 0.02em;
-    cursor: pointer;
+    cursor: default;
+    text-transform: uppercase;
     font-weight: 500;
 }
 h1 span
@@ -296,7 +298,6 @@ h1:hover span
 {
     display: none;
     position: relative;
-    font-size: 1.3rem;
 }
 .View.Activeview
 {
@@ -365,7 +366,6 @@ h1:hover span
     border-radius: 10px;
     cursor: default;
     transition: background-color 0.5s, transform 0.5s;
-    margin-right: 40px;
 }
 .servicesList div ion-icon
 {
@@ -376,7 +376,7 @@ h1:hover span
 .servicesList div h2
 {
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 1000;
     color: #fff;
 }
 .servicesList div a
@@ -659,8 +659,6 @@ h1:hover span
         padding: 10px;
         font-size: 0.7em;
         width:fit-content;
-        margin-right: 0px;
-        height: 70vh;
     }
     .servicesList div ion-icon
     {
@@ -675,139 +673,5 @@ h1:hover span
         position: relative;
         font-size: 0.6rem;
     }
-}
-@media only screen and (max-width: 250px)
-{
-    .header
-    {
-        display: inline-block;
-    }
-    #Me
-    {
-        font-size: 0.9em;
-        text-align: center;
-    }
-    .menu
-    {
-        left:79vw;
-        top:-20vh;
-    }
-    .menu li
-    {
-        transform-origin: 125px;
-    }
-    .menu.active .menuToggle
-    {
-       left:500%;
-    }
-    .menu.active 
-    {
-        left:2vw;
-        top: 30%;
-        font-size: 0.9em;
-    }
-    .menu.active li a::before
-    {
-        width:40px;
-        height: 40px;
-    }
-    .menu li a::after
-    {
-       display: none;
-    }
-    
-    .row img
-    {
-        width: 35vw;
-        border-radius: 50%;
-    }
-    .subTitle
-    {
-        font-size: 1.9em;
-    }
-    .row
-    {
-     display: inline-block;
-     justify-content: center;
-     width:100vw ;
-     text-align: center;
-     height: fit-content;
-    }
-    .Extra
-    {
-        width: 100vw;
-        font-size: 0.8rem;
-        align-items:start;
-        padding: 0px;
-        display: inline-block;
-    }
-    .Viewpoint
-    {
-        display: inline-block;
-        width: 74px;
-        padding: 0;
-    }
-    .View
-    {
-        font-size: 0.7rem;
-    }
-    .AboutMe
-    {
-        width: 100%;
-        height:fit-content;
-    }
-    .AboutC1,.AboutC2
-    {
-        flex-basis: 100%;
-    }
-    .AboutMe p
-    {
-        font-size: 0.6em;
-    }
-    .Services
-    {
-        text-align: center;
-        height: fit-content;
-    }
-    .Projects
-    {
-        text-align: center;
-        height: fit-content;
-    }
-    .project 
-    {
-        width:100%;
-        height: fit-content;
-    }
-    .servicesList
-    {
-    display:grid;
-    justify-content:space-between;
-    align-items: center;
-    text-align: center;
-
-    }
-    .servicesList div
-    {
-        display: inline-block;
-        padding: 10px;
-        font-size: 0.7em;
-        width:fit-content;
-        margin-right: 0px;
-    }
-    .servicesList div ion-icon
-    {
-        font-size: 40px;
-    }
-    .servicesList div h2 
-    {
-        font-size: 20px;
-    }
-    .Contact
-    {
-        position: relative;
-        font-size: 0.6rem;
-    }
-    /* ----------------------------New stuff starts Here---------------------- */
 
 }
