@@ -298,6 +298,7 @@ h1:hover span
 {
     display: none;
     position: relative;
+    font-size: 1.9rem;
 }
 .View.Activeview
 {
