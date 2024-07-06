@@ -738,12 +738,19 @@ h1:hover span
     {
         width: 100vw;
         font-size: 0.8rem;
-        align-items: center;
-        justify-content: center;
+        align-items:start;
+        justify-content: start;
+        padding: 0px;
+        display: flex;
+    }
+    .Viewpoint
+    {
+        width: 74px;
+        padding: 0;
     }
     .View
     {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     .AboutMe
     {
