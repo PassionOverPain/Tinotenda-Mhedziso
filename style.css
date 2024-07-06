@@ -150,7 +150,6 @@ header
     align-items: center;
     position: relative;
     height: 100vh;
-
 }
 h1
 {
@@ -158,7 +157,6 @@ h1
     font-size: 2em;
     letter-spacing: 0.02em;
     cursor: default;
-    text-transform: uppercase;
     font-weight: 500;
 }
 h1 span
