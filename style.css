@@ -739,12 +739,12 @@ h1:hover span
         width: 100vw;
         font-size: 0.8rem;
         align-items:start;
-        justify-content: start;
         padding: 0px;
-        display: flex;
+        display: inline-block;
     }
     .Viewpoint
     {
+        display: inline-block;
         width: 74px;
         padding: 0;
     }
