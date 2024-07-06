@@ -660,6 +660,7 @@ h1:hover span
         font-size: 0.7em;
         width:fit-content;
         margin-right: 0px;
+        height: 70vh;
     }
     .servicesList div ion-icon
     {
