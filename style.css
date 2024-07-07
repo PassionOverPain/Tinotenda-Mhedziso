@@ -157,8 +157,7 @@ h1
     position: relative;
     font-size: 2em;
     letter-spacing: 0.02em;
-    cursor: default;
-    text-transform: uppercase;
+    cursor:crosshair;
     font-weight: 500;
 }
 h1 span
