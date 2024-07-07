@@ -298,7 +298,7 @@ h1:hover span
 {
     display: none;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .View.Activeview
 {
@@ -367,6 +367,7 @@ h1:hover span
     border-radius: 10px;
     cursor: default;
     transition: background-color 0.5s, transform 0.5s;
+    margin-right: 40px;
 }
 .servicesList div ion-icon
 {
@@ -377,7 +378,7 @@ h1:hover span
 .servicesList div h2
 {
     font-size: 30px;
-    font-weight: 1000;
+    font-weight: 100;
     color: #fff;
 }
 .servicesList div a
