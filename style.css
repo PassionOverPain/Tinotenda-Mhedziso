@@ -150,6 +150,9 @@ header
     align-items: center;
     position: relative;
     height: 100vh;
+    background-color: black;
+    background-image: url(Images/room.webp);
+    background-size: cover;
 
 }
 h1
