@@ -308,7 +308,12 @@ h1:hover span
 {
     display: block;
 }
-
+.Programming
+{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
 #TechStack
 {
     margin-right: 20px;
