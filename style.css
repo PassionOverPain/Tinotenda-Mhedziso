@@ -243,9 +243,7 @@ h1:hover span
     opacity: 0; /*Added this*/
     transition: all 1s;
     filter: blur(5px);
-    transform: translateX(-100%);
-
-   
+    transform: translateX(-100%); 
 }
 .row
 {
@@ -308,11 +306,17 @@ h1:hover span
 {
     display: block;
 }
+.View img
+{
+    filter: grayscale(1.2);
+    display: block; /*This might cause some issues elsewhere...*/
+}
 .Programming
 {
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+    color:#0f0;
+    gap: 2px;
 }
 #TechStack
 {
