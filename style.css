@@ -153,6 +153,7 @@ header
     background-color: black;
     background-image: url(Images/room.webp);
     background-size: cover;
+    background-position: center;
 
 }
 h1
