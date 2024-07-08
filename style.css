@@ -151,9 +151,10 @@ header
     position: relative;
     height: 100vh;
     background-color: black;
-    background-image: url(Images/room.webp);
+    background-image: url(Images/cyberspace.webp);
     background-size: cover;
     background-position: center;
+    color:white;
 
 }
 h1
@@ -166,7 +167,7 @@ h1
 }
 h1 span
 {
-    color:white;
+    color:black;
     transition: 0.25s;
 }
 h1:hover span
