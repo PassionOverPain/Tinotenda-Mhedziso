@@ -306,13 +306,9 @@ h1:hover span
 }
 .View.Activeview
 {
-    display: grid;
+    display: block;
 }
-#Skills
-{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-}
+
 #TechStack
 {
     margin-right: 20px;
