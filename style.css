@@ -704,5 +704,9 @@ h1:hover span
         position: relative;
         font-size: 0.6rem;
     }
+    .project img
+    {
+        height: 65vh;
+    }
 
 }
