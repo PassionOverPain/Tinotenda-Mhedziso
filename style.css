@@ -311,12 +311,13 @@ h1:hover span
     width: 5vw;
     display: block; /*This might cause some issues elsewhere...*/
     animation-name: floaty;
-    animation-duration: infinite;
-    animation: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 @keyframes floaty 
 {
-   to {transform:translateY(100%)};
+    50%{transform: rotate(360deg)}
 }
 .Programming
 {
