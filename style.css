@@ -304,11 +304,13 @@ h1:hover span
 }
 .View.Activeview
 {
-    display: block; /*Makes the selected area visible*/
+    display: block;
+    justify-content: center; /*Makes the selected area visible*/
 }
 .View img
 {
     filter: grayscale(1.2);
+    width: 5vw;
     display: block; /*This might cause some issues elsewhere...*/
 }
 .Programming
@@ -645,6 +647,10 @@ h1:hover span
     .AboutMe p
     {
         font-size: 0.6em;
+    }
+    .View img
+    {
+        width:20vw;
     }
     .Services
     {
