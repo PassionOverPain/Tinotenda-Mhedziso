@@ -634,6 +634,10 @@ h1:hover span
     {
         font-size: 0.5rem;
     }
+    #Skills
+    {
+        margin-left: 15px;
+    }
     .AboutMe
     {
         width: 100%;
@@ -649,13 +653,18 @@ h1:hover span
     }
     .View img
     {
-        width:15vw;
+        width:10vw;
         float:none;
     }
     .Services
     {
         text-align: center;
         height: fit-content;
+    }
+    .servicesList
+    {
+        margin-left: 15px;
+        justify-content: center;
     }
     .Projects
     {
