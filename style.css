@@ -304,8 +304,7 @@ h1:hover span
 }
 .View.Activeview
 {
-    display: block;
-    justify-content: center; /*Makes the selected area visible*/
+    display: block; /*Makes the selected area visible*/
 }
 .View img
 {
@@ -650,7 +649,8 @@ h1:hover span
     }
     .View img
     {
-        width:20vw;
+        width:15vw;
+        float:none;
     }
     .Services
     {
