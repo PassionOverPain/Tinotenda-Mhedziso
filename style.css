@@ -580,7 +580,7 @@ h1:hover span
     .menu
     {
         left:88vw;
-        top:-20vh;
+        bottom: 0vh;
     }
     .menu li
     {
@@ -592,8 +592,8 @@ h1:hover span
     }
     .menu.active 
     {
-        left:2vw;
-        top: 30%;
+        left:15vw;
+        top: 30vh;
         font-size: 0.9em;
     }
     .menu.active li a::before
