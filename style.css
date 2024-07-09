@@ -289,7 +289,6 @@ h1:hover span
 }
 .Extra
 {   
-
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
@@ -311,6 +310,13 @@ h1:hover span
     filter: grayscale(1.2);
     width: 5vw;
     display: block; /*This might cause some issues elsewhere...*/
+    animation-name: floaty;
+    animation-duration: 1s;
+    animation: 1s;
+}
+@keyframes floaty 
+{
+    50% {}
 }
 .Programming
 {
@@ -516,8 +522,6 @@ h1:hover span
     display:block;
     text-align: center;
     position: relative;
-    
-
 }
 .Contact h3
 {
