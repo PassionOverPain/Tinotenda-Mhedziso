@@ -1,717 +1,615 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body
-{
-    color: gray;
-    align-items: center;
-    min-height:fit-content;
-    background: #000000;
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+body {
+  color: gray;
+  align-items: center;
+  min-height: fit-content;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
 }
-html /* Very useful simple line of code down below ✔*/
-{
-    scroll-behavior: smooth;
+html /* Very useful simple line of code down below ✔*/ {
+  scroll-behavior: smooth;
 }
 
-.menu
-{
-    margin: 0;
-    position: fixed;
-    left: 75vw;
-    top:-10vh;
-    width:20px;
-    height:260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100000;  /*This is what I was looking for ;)*/
+.menu {
+  margin: 0;
+  position: fixed;
+  left: 75vw;
+  top: -10vh;
+  width: 20px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000; /*This is what I was looking for ;)*/
 }
-.menu li
-{
-    
-    position: absolute;
-    left:50%;
-    list-style: none;
-    transform-origin: 180px;
-    transition: 0.5s;
-    transition-delay: calc(0.1s * var(--i));
-    transform: rotate(0deg) translateX(-30px);
+.menu li {
+  position: absolute;
+  left: 50%;
+  list-style: none;
+  transform-origin: 180px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(-30px);
 }
-.menu li a
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:60px;
-    height: 60px;
-    font-size: 1.5em;
-    border-radius: 50%;
-    transform: rotate(calc(360deg / -8 * var(--i)));  /*Might need to change 8 items*/
-    color: transparent;
-    transition: 1s;
-    transition-delay: 0.5s;
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  transform: rotate(
+    calc(360deg / -8 * var(--i))
+  ); /*Might need to change 8 items*/
+  color: transparent;
+  transition: 1s;
+  transition-delay: 0.5s;
 }
-.menu.active
-{
-    left:35%;
-    top: 30%;
+.menu.active {
+  left: 35%;
+  top: 30%;
 }
-.menu.active li a
-{
-
-    color: var(--clr);
+.menu.active li a {
+  color: var(--clr);
 }
-.menu li a::before
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--clr);
-    transform: rotate(calc(var(--i) * 90deg)) translate(0,25px);
-    transition: height 0.5s, width 0.5s, transform 0.5s;
-    transition-delay: 0s, 0s, 0s;
+.menu li a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--clr);
+  transform: rotate(calc(var(--i) * 90deg)) translate(0, 25px);
+  transition: height 0.5s, width 0.5s, transform 0.5s;
+  transition-delay: 0s, 0s, 0s;
 }
-.menu.active li a::before
-{
-    width:60px;
-    height: 60px;
-    border: 2px solid var(--clr);
-    box-sizing: border-box;
-    background: #000713;
-    transform: rotate(calc(var(--i) * 90deg)) translate(0px,0px);
-    transition: transform 0.5s, height 0.5s, width 0.5s;
-    transition-delay: 1s, 1.5s, 1.5s;
-    rotate: 135deg;
+.menu.active li a::before {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--clr);
+  box-sizing: border-box;
+  background: #000713;
+  transform: rotate(calc(var(--i) * 90deg)) translate(0px, 0px);
+  transition: transform 0.5s, height 0.5s, width 0.5s;
+  transition-delay: 1s, 1.5s, 1.5s;
+  rotate: 135deg;
 }
-.menu.active li:hover a::before
-{
-    background:var(--clr);
-    color: #000713;
-    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+.menu.active li:hover a::before {
+  background: var(--clr);
+  color: #000713;
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
 }
-.menu.active li
-{
-    transform: rotate(calc(360deg / 8 * var(--i)));  /*Might need to change 8 items*/
-    
+.menu.active li {
+  transform: rotate(
+    calc(360deg / 8 * var(--i))
+  ); /*Might need to change 8 items*/
 }
-.menu li a::after
-{
-    content: '';
-    position: absolute;
-    left:80%;
-    width: 20px;
-    height:2px;
-    background: var(--clr);
-    z-index: -1;
-    transform: rotate(calc(var(--i) * 0deg)) translate(15px,0px);
-    transition: 0.5s;
-    transition-delay: 0.5s;
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 80%;
+  width: 20px;
+  height: 2px;
+  background: var(--clr);
+  z-index: -1;
+  transform: rotate(calc(var(--i) * 0deg)) translate(15px, 0px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
-.menu.active li:hover a ion-icon
-{
-    position: relative;
-    color: #000713;
-    z-index: 100000;
+.menu.active li:hover a ion-icon {
+  position: relative;
+  color: #000713;
+  z-index: 100000;
 }
-.menuToggle
-{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    color:#fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size:2em;
-    transition: transform 1.5s;
+.menuToggle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2em;
+  transition: transform 1.5s;
 }
-.menu.active .menuToggle
-{
-   
-   transform: rotate(315deg);
-   left:800%;
+.menu.active .menuToggle {
+  transform: rotate(315deg);
+  left: 800%;
 }
-header
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
-    background-color: black;
-    background-image: url(Images/cyberspace.webp);
-    background-size: cover;
-    background-position: center;
-    color:white;
-
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  background-image: url(Images/cyberspace.webp);
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
-h1
-{
-    position: relative;
-    font-size: 2em;
-    letter-spacing: 0.02em;
-    cursor:crosshair;
-    font-weight: 500;
+h1 {
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  cursor: crosshair;
+  font-weight: 500;
 }
-h1 span
-{
-    color:black;
-    transition: 0.25s;
+h1 span {
+  color: black;
+  transition: 0.25s;
 }
-h1:hover span
-{
-    color:#0f0;
-    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
+h1:hover span {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
 }
-.Contactbtn
-{
-    margin-top: 10%;
-    width: 50%;
-    size: 10%;
-    background-color:transparent;
-    font-size: 1rem;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    border: #0f0 1.25em soild;
-    color: #ffffff;
-    padding: 2%;
-    border-radius: 10em;
-    text-shadow: 
-     0 0 0.125em rgb(3, 182, 146),
-     0 0  0.25em lime ;
-     box-shadow: 
-     inset 0 0 1em lime, 0 0 0.5em lime;
-     position: relative;
+.Contactbtn {
+  margin-top: 10%;
+  width: 50%;
+  size: 10%;
+  background-color: transparent;
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: #0f0 1.25em soild;
+  color: #ffffff;
+  padding: 2%;
+  border-radius: 10em;
+  text-shadow: 0 0 0.125em rgb(3, 182, 146), 0 0 0.25em lime;
+  box-shadow: inset 0 0 1em lime, 0 0 0.5em lime;
+  position: relative;
 }
-.Contactbtn::before
-{
-    pointer-events: none;
-    content: '';
-    position: absolute;
-    background:limegreen;
-    top:120%;
-    right:0;
-    width: 100%;
-    height: 100%;
-    transform: perspective(1em) rotateX(30deg) scale(1,0.30);
-    filter: blur(1.5em);
-    opacity: 0.7;
+.Contactbtn::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: limegreen;
+  top: 120%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(30deg) scale(1, 0.3);
+  filter: blur(1.5em);
+  opacity: 0.7;
 }
-.Contactbtn::after
-{
-    content: '';
-    position: absolute;
-    top:0%;
-    right:0;
-    left: 0%;
-    bottom: 0%;
-    box-shadow: 0 0 2em 0.5em lime;
-    opacity: 0;
-    transition: opacity 100ms linear;
+.Contactbtn::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0;
+  left: 0%;
+  bottom: 0%;
+  box-shadow: 0 0 2em 0.5em lime;
+  opacity: 0;
+  transition: opacity 100ms linear;
 }
-.Contactbtn:hover::after
-{
-    opacity: 1;
+.Contactbtn:hover::after {
+  opacity: 1;
 }
-.Contactbtn:hover,.Contactbtn:focus
-{
-    
-    background:#0f0;
-    transform: scale(1.1);
+.Contactbtn:hover,
+.Contactbtn:focus {
+  background: #0f0;
+  transform: scale(1.1);
 }
-.AboutMe
-{
-  
-    text-align: start;
-    background-color: rgb(0, 5, 4);
-    height: fit-content;
-    color: #ababab;
-    flex-wrap: wrap;
-    opacity: 0; /*Added this*/
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateX(-100%); 
+.AboutMe {
+  text-align: start;
+  background-color: rgb(0, 5, 4);
+  height: fit-content;
+  color: #ababab;
+  flex-wrap: wrap;
+  opacity: 0; /*Added this*/
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
 }
-.row
-{
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
 }
-.AboutC1
-{
-    flex-basis: 25%; 
+.AboutC1 {
+  flex-basis: 25%;
 }
-#Tino
-{
-    width: 100%;
-    border-radius: 100%;
+#Tino {
+  width: 100%;
+  border-radius: 100%;
 }
-.AboutC2
-{
-    flex-basis: 70%;
+.AboutC2 {
+  flex-basis: 70%;
 }
-.subTitle
-{
-    display: block;
-    color:white;
-    font-size: 3em;
-    font-weight: 600;
-    margin-bottom: 5px;
-    padding: 0.5%;
-    position: relative;
-    top:0.5%;
+.subTitle {
+  display: block;
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding: 0.5%;
+  position: relative;
+  top: 0.5%;
 }
-.AboutMe p
-{
-    background-color: #001908;
-    padding: 15px;
-    border-radius: 10px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: relative;
-    top:5%;
-    font-size: 1.1rem;
-    height:fit-content;
-
+.AboutMe p {
+  background-color: #001908;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+  top: 5%;
+  font-size: 1.1rem;
+  height: fit-content;
 }
-.Extra
-{   
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    font-size: 1.9rem;
-    color:#fff;
+.Extra {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  font-size: 1.9rem;
+  color: #fff;
 }
-.View
-{
-    display: none;
-    position: relative;
-    font-size: 1.3rem;
+.View {
+  display: none;
+  position: relative;
+  font-size: 1.3rem;
 }
-.View.Activeview
-{
-    display: block; /*Makes the selected area visible*/
+.View.Activeview {
+  display: block; /*Makes the selected area visible*/
 }
-.View img
-{
-    filter: grayscale(1.2);
-    width: 5vw;
-    display: block; /*This might cause some issues elsewhere...*/
-    animation-name: floaty;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
+.View img {
+  filter: grayscale(1.2);
+  width: 5vw;
+  display: block; /*This might cause some issues elsewhere...*/
+  animation-name: floaty;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
-@keyframes floaty 
-{
-    50%{transform: rotate(360deg)}
+@keyframes floaty {
+  50% {
+    transform: rotate(360deg);
+  }
 }
-.Programming
-{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    color:#0f0;
-    gap: 2px;
+.Programming {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #0f0;
+  gap: 2px;
 }
-#TechStack
-{
-    margin-right: 20px;
-    cursor: pointer;
+#TechStack {
+  margin-right: 20px;
+  cursor: pointer;
 }
-#Education
-{
-    margin-left: 25px;
-    cursor:pointer;
+#Education {
+  margin-left: 25px;
+  cursor: pointer;
 }
-#Experience
-{
-    margin-left: 25px;
-    cursor:pointer;
+#Experience {
+  margin-left: 25px;
+  cursor: pointer;
 }
-.Viewpoint::after
-{
-    content: '';
-    width:0px;
-    height: 3px;
-    background: #0f0;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+.Viewpoint::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background: #0f0;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
-.Viewpoint.Activepoint::after
-{
-    width: 100%;
+.Viewpoint.Activepoint::after {
+  width: 100%;
 }
-.View ul
-{
-    list-style: none;
+.View ul {
+  list-style: none;
 }
-.Services
-{
-    text-align: start;
-    height: fit-content;
-    color: #ababab;
-    flex-wrap:wrap;
-    opacity: 0; /*Added this*/
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateX(-100%);
+.Services {
+  text-align: start;
+  height: fit-content;
+  color: #ababab;
+  flex-wrap: wrap;
+  opacity: 0; /*Added this*/
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
 }
-.servicesList
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-    grid-gap:1rem;
-    margin-top: 50px;
+.servicesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
 }
-.servicesList div
-{
-    width:fit-content;
-    position: relative;
-    background-color: #001908;
-    padding: 30px;
-    font-size: 20px;
-    font-weight: 300;
-    border-radius: 10px;
-    cursor: default;
-    transition: background-color 0.5s, transform 0.5s;
-    margin-right: 40px;
+.servicesList div {
+  width: fit-content;
+  position: relative;
+  background-color: #001908;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px;
+  cursor: default;
+  transition: background-color 0.5s, transform 0.5s;
+  margin-right: 40px;
 }
-.servicesList div ion-icon
-{
-    font-size: 50px;
-    margin-bottom: 10px;
-    color:#0f0;
+.servicesList div ion-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #0f0;
 }
-.servicesList div h2
-{
-    font-size: 30px;
-    font-weight: 100;
-    color: #fff;
+.servicesList div h2 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #fff;
 }
-.servicesList div a
-{
-    text-decoration: none;
-    color:#0f0;
-    font-size: 12px;
-    display: inline-block;
-    transition: border 0.5s; /*This is not working the way I want it to*/
+.servicesList div a {
+  text-decoration: none;
+  color: #0f0;
+  font-size: 12px;
+  display: inline-block;
+  transition: border 0.5s; /*This is not working the way I want it to*/
 }
-.servicesList div a:hover
-{
-    border-bottom: solid 1px green;
+.servicesList div a:hover {
+  border-bottom: solid 1px green;
 }
-.servicesList div:hover
-{
-    background-color: #000713;
-    transform: translateY(-10px);
+.servicesList div:hover {
+  background-color: #000713;
+  transform: translateY(-10px);
 }
-.Projects
-{
-    background-color: rgb(0, 5, 4);
-    padding: 2px 0;
-    text-align: start;
-    height: fit-content;
-    color: #ababab;
-    flex-wrap: wrap;
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateX(-100%);
+.Projects {
+  background-color: rgb(0, 5, 4);
+  padding: 2px 0;
+  text-align: start;
+  height: fit-content;
+  color: #ababab;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
 }
-.projectsList
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap:40px;
-    margin-top: 10px;
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 10px;
 }
-.project
-{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.project img
-{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
 }
-.layer
-{
-    width: 100%;
-    height: 0%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),#001908);
-    border-radius: 10px;
-    position: absolute;
-    left:0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+.layer {
+  width: 100%;
+  height: 0%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #001908);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
 }
-.layer h3
-{
-    font-weight: 1000;
-    margin-bottom: 20px;
+.layer h3 {
+  font-weight: 1000;
+  margin-bottom: 20px;
 }
-.layer a
-{
-    margin-top: 20px;
-    color:#001908;
-    text-decoration: none;
-    font-size: 25px;
-    line-height: 70px;
-    width: 60px;
-    height: 60px;
-    background-color: #0f0;
-    text-align: center;
-    border-radius: 50%;
+.layer a {
+  margin-top: 20px;
+  color: #001908;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 70px;
+  width: 60px;
+  height: 60px;
+  background-color: #0f0;
+  text-align: center;
+  border-radius: 50%;
 }
-.project:hover img
-{
-    transform: scale(1.1);
+.project:hover img {
+  transform: scale(1.1);
 }
-.project:hover .layer
-{
-    height: 100%;
+.project:hover .layer {
+  height: 100%;
 }
-.btn
-{
-    display: block;
-    margin: 30px auto;
-    width: fit-content;
-    border: 1px solid #001908;
-    padding: 14px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.5s;
+.btn {
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+  border: 1px solid #001908;
+  padding: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.5s;
 }
-.btn:hover
-{
- background-color: #0f0;
+.btn:hover {
+  background-color: #0f0;
 }
-.Contact
-{
-    background-color: #001908;
-    padding: 2px 0;
-    height: fit-content;
-    color: #ababab;
-    display:block;
-    text-align: center;
-    position: relative;
+.Contact {
+  background-color: #001908;
+  padding: 2px 0;
+  height: fit-content;
+  color: #ababab;
+  display: block;
+  text-align: center;
+  position: relative;
 }
-.Contact h3
-{
-    margin-bottom:0;
-    display: block;
-    flex-basis: 60%;
+.Contact h3 {
+  margin-bottom: 0;
+  display: block;
+  flex-basis: 60%;
 }
-.Contact a
-{
-    display: inline-block;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.3em;
+.Contact a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3em;
 }
-.Social-Icons a
-{
-   font-size: 70px;
-   display: inline-block;
-   margin-top: 1%;
+.Social-Icons a {
+  font-size: 70px;
+  display: inline-block;
+  margin-top: 1%;
 }
-.Copyright
-{
-    color: white;
-    position: relative;  
+.Copyright {
+  color: white;
+  position: relative;
 }
-.show
-{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
-#Anime
-{
-    position: relative;
-    display: inline-block;
-    margin-top: 20%;
-    width: 50%;
-    size: 10%;
-    background-color:transparent;
-    font-size: 1rem;
-    display: inline-block;
-    cursor: pointer;
-    border:#001908 1.25em soild;
-    color: #ffffff;
-    padding: 2%;
-    border-radius: 10em;
+#Anime {
+  position: relative;
+  display: inline-block;
+  margin-top: 20%;
+  width: 50%;
+  size: 10%;
+  background-color: transparent;
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  border: #001908 1.25em soild;
+  color: #ffffff;
+  padding: 2%;
+  border-radius: 10em;
 }
 /*------------------------------------Responsive Design--------------------------------------------------------*/
-@media only screen  and (min-width: 251px) and (max-width: 600px) /* 250px optimisation to come */
-{
-    .header
-    {
-        display: inline-block;
-    }
-    #Me
-    {
-        font-size: 0.9em;
-        text-align: center;
-    }
-    .menu
-    {
-        left:88vw;
-        bottom: 0vh;
-    }
-    .menu li
-    {
-        transform-origin: 125px;
-    }
-    .menu.active .menuToggle
-    {
-       left:500%;
-    }
-    .menu.active 
-    {
-        left:15vw;
-        top: 30vh;
-        font-size: 0.9em;
-    }
-    .menu.active li a::before
-    {
-        width:40px;
-        height: 40px;
-    }
-    .menu li a::after
-    {
-       display: none;
-    }
-    
-    .row img
-    {
-        width: 35vw;
-        border-radius: 50%;
-    }
-    .subTitle
-    {
-        font-size: 1.9em;
-    }
-    .row
-    {
-     display: inline-block;
-     justify-content: center;
-     width:100vw ;
-     text-align: center;
-     height: fit-content;
-    }
-    .Extra
-    {
-        width: 100vw;
-        font-size: 0.8rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .View
-    {
-        font-size: 0.5rem;
-    }
-    #Skills
-    {
-        margin-left: 15px;
-    }
-    .AboutMe
-    {
-        width: 100%;
-        height:fit-content;
-    }
-    .AboutC1,.AboutC2
-    {
-        flex-basis: 100%;
-    }
-    .AboutMe p
-    {
-        font-size: 0.6em;
-    }
-    .View img
-    {
-        width:10vw;
-        float:none;
-    }
-    .Services
-    {
-        text-align: center;
-        height: fit-content;
-    }
-    .servicesList
-    {
-        margin-left: 15px;
-        justify-content: center;
-    }
-    .Projects
-    {
-        text-align: center;
-        height: fit-content;
-    }
-    .project 
-    {
-        width:100%;
-        height: fit-content;
-    }
-    .servicesList
-    {
-    display:grid;
-    justify-content:space-between;
+@media only screen and (min-width: 251px) and (max-width: 600px) /* 250px optimisation to come */ {
+  .header {
+    display: inline-block;
+  }
+  #Me {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .menu {
+    left: 88vw;
+    bottom: 0vh;
+  }
+  .menu li {
+    transform-origin: 125px;
+  }
+  .menu.active .menuToggle {
+    left: 500%;
+  }
+  .menu.active {
+    left: 15vw;
+    top: 30vh;
+    font-size: 0.9em;
+  }
+  .menu.active li a::before {
+    width: 40px;
+    height: 40px;
+  }
+  .menu li a::after {
+    display: none;
+  }
+
+  .row img {
+    width: 35vw;
+    border-radius: 50%;
+  }
+  .subTitle {
+    font-size: 1.9em;
+  }
+  .row {
+    display: inline-block;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    height: fit-content;
+  }
+  .Extra {
+    width: 100vw;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .View {
+    font-size: 0.5rem;
+  }
+  #Skills {
+    margin-left: 15px;
+  }
+  .AboutMe {
+    width: 100%;
+    height: fit-content;
+  }
+  .AboutC1,
+  .AboutC2 {
+    flex-basis: 100%;
+  }
+  .AboutMe p {
+    font-size: 0.6em;
+  }
+  .View img {
+    width: 10vw;
+    float: none;
+  }
+  .Services {
+    text-align: center;
+    height: fit-content;
+  }
+  .servicesList {
+    margin-left: 15px;
+    justify-content: center;
+  }
+  .Projects {
+    text-align: center;
+    height: fit-content;
+  }
+  .project {
+    width: 100%;
+    height: fit-content;
+  }
+  .servicesList {
+    display: grid;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-
-    }
-    .servicesList div
-    {
-        display: inline-block;
-        padding: 10px;
-        font-size: 0.7em;
-        width:fit-content;
-    }
-    .servicesList div ion-icon
-    {
-        font-size: 40px;
-    }
-    .servicesList div h2 
-    {
-        font-size: 20px;
-    }
-    .Contact
-    {
-        position: relative;
-        font-size: 0.6rem;
-    }
-    .project img
-    {
-        height: 65vh;
-    }
-
+  }
+  .servicesList div {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.7em;
+    width: fit-content;
+  }
+  .servicesList div ion-icon {
+    font-size: 40px;
+  }
+  .servicesList div h2 {
+    font-size: 20px;
+  }
+  .Contact {
+    position: relative;
+    font-size: 0.6rem;
+  }
+  .project img {
+    height: 65vh;
+  }
 }
