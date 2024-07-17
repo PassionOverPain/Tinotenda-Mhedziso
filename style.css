@@ -14,7 +14,8 @@ body {
   background: #000000;
   margin: 0;
   padding: 0;
-  font-family: ;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Pixelify Sans", sans-serif; */
 }
 html /* Very useful simple line of code down below ✔*/ {
   scroll-behavior: smooth;
