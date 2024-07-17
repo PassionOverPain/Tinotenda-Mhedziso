@@ -304,6 +304,7 @@ h1:hover span {
   margin-left: 25px;
   cursor: pointer;
 }
+
 .Viewpoint::after {
   content: "";
   width: 0px;
@@ -357,6 +358,7 @@ h1:hover span {
   font-size: 30px;
   font-weight: 100;
   color: #fff;
+  font-family: "Pixelify Sans", sans-serif;
 }
 .servicesList div a {
   text-decoration: none;
@@ -423,6 +425,7 @@ h1:hover span {
   transition: height 0.5s;
 }
 .layer h3 {
+  font-family: "Pixelify Sans", sans-serif;
   font-weight: 1000;
   margin-bottom: 20px;
 }
