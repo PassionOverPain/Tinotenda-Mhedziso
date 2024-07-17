@@ -143,6 +143,7 @@ header {
   background-size: cover;
   background-position: center;
   color: white;
+  font-family: "Pixelify Sans", sans-serif;
 }
 h1 {
   position: relative;
@@ -260,6 +261,7 @@ h1:hover span {
   display: flex;
   font-size: 1.9rem;
   color: #fff;
+  font-family: "Pixelify Sans", sans-serif;
 }
 .View {
   display: none;
