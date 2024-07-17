@@ -261,12 +261,12 @@ h1:hover span {
   display: flex;
   font-size: 1.9rem;
   color: #fff;
-  font-family: "Pixelify Sans", sans-serif;
 }
 .View {
   display: none;
   position: relative;
   font-size: 1.3rem;
+  font-family: "Pixelify Sans", sans-serif;
 }
 .View.Activeview {
   display: block; /*Makes the selected area visible*/
