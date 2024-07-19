@@ -1,15 +1,5 @@
 /** @format */
-import {getClient} from "@botpress/webchat";
 
-const client = getClient({clientId: "5234523-543254-35342-52345"});
-
-client.on("message", (message) => {
-  console.log("Received message", message); // Messages from the bot
-});
-
-await client.connect();
-
-await client.sendMessage("Hello, Botpress!"); // Send a message to the bot
 let menuToggle = document.querySelector(".menuToggle"); //This will allow my navbar to have it's items
 let menu = document.querySelector(".menu");
 menuToggle.onclick = function () {
