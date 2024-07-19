@@ -57,6 +57,6 @@ var hiddenElements = document.querySelectorAll(
   ".Projects, .AboutMe, .Services"
 );
 hiddenElements.forEach((el) => observer.observe(el));
-function botpress() {
+function botpress1() {
   botpress.sendMessage("Hey There Dummy");
 }
