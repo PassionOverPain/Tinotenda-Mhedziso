@@ -58,7 +58,5 @@ var hiddenElements = document.querySelectorAll(
 );
 hiddenElements.forEach((el) => observer.observe(el));
 function botpress1() {
-  botpress.mergeConfig({
-    botName: "Legendardy",
-  });
+  botpress.config({});
 }
