@@ -58,5 +58,7 @@ var hiddenElements = document.querySelectorAll(
 );
 hiddenElements.forEach((el) => observer.observe(el));
 function botpress1() {
-  botpress.sendMessage("Hey There Dummy");
+  botpress1.mergeConfig({
+    botName: "Legendardy",
+  });
 }
