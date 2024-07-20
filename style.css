@@ -268,7 +268,6 @@ h1:hover span {
   display: none;
   position: relative;
   font-size: 1.3rem;
-  font-family: "Pixelify Sans", sans-serif;
 }
 .View.Activeview {
   display: block; /*Makes the selected area visible*/
@@ -296,6 +295,7 @@ h1:hover span {
 #TechStack {
   margin-right: 20px;
   cursor: pointer;
+  font-family: "Pixelify Sans", sans-serif;
 }
 #Education {
   margin-left: 25px;
