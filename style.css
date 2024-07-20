@@ -447,6 +447,11 @@ h1:hover span {
   text-align: center;
   border-radius: 50%;
 }
+.person {
+  text-decoration: none;
+  color: #0f0;
+  font-family: "Pixelify Sans", sans-serif;
+}
 .project:hover img {
   transform: scale(1.1);
 }
