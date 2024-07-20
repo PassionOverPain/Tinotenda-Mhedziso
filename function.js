@@ -57,6 +57,10 @@ var hiddenElements = document.querySelectorAll(
   ".Projects, .AboutMe, .Services"
 );
 hiddenElements.forEach((el) => observer.observe(el));
-function botpress1() {
-  botpress.config({});
-}
+
+window.botpressWebchat.onEvent(
+  function (event) {
+    console.log(event);
+  },
+  ["TRIGGER"]
+);
