@@ -300,10 +300,12 @@ h1:hover span {
 #Education {
   margin-left: 25px;
   cursor: pointer;
+  font-family: "Pixelify Sans", sans-serif;
 }
 #Experience {
   margin-left: 25px;
   cursor: pointer;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 .Viewpoint::after {
