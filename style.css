@@ -524,6 +524,9 @@ h1:hover span {
   padding: 2%;
   border-radius: 10em;
 }
+#Anime:hover {
+  transform: scale(1.1);
+}
 /*------------------------------------Responsive Design--------------------------------------------------------*/
 @media only screen and (min-width: 251px) and (max-width: 600px) /* 250px optimisation to come */ {
   .header {
