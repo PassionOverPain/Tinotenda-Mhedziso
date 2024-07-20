@@ -343,6 +343,9 @@ h1:hover span {
 .servicesList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   grid-gap: 1rem;
   margin-top: 50px;
 }
