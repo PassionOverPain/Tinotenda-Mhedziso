@@ -265,12 +265,12 @@ h1:hover span {
   display: flex;
   font-size: 1.9rem;
   color: #fff;
-  letter-spacing: 3px;
 }
 .View {
   display: none;
   position: relative;
   font-size: 1.3rem;
+  letter-spacing: 3px;
 }
 .View.Activeview {
   display: block; /*Makes the selected area visible*/
