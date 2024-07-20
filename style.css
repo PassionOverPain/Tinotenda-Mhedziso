@@ -307,6 +307,9 @@ h1:hover span {
   cursor: pointer;
   font-family: "Pixelify Sans", sans-serif;
 }
+.View span {
+  font-family: "Pixelify Sans", sans-serif;
+}
 
 .Viewpoint::after {
   content: "";
