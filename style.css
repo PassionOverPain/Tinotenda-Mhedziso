@@ -37,9 +37,12 @@ html /* Very useful simple line of code down below ✔*/ {
   color: #0f0;
   text-align: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 #Loading {
-  position: absolute;
+  position: relative;
+  top: 10%;
 }
 .myName {
   color: #000;
