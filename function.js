@@ -61,4 +61,5 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   // Lazy Loading :) //
   loader.style.display = "none";
+  this.document.body.style.overflowY = "scroll";
 });
