@@ -673,4 +673,7 @@ h1:hover span {
   .project img {
     height: 65vh;
   }
+  #preloader {
+    background-size: 40%;
+  }
 }
