@@ -24,10 +24,13 @@ html /* Very useful simple line of code down below ✔*/ {
 
 #preloader {
   background-color: #000;
+  background-image: url(Images/Loading.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 1000000; /* hehe I know 🤣😅*/
 }
 .menu {
   margin: 0;
