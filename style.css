@@ -41,6 +41,7 @@ html /* Very useful simple line of code down below ✔*/ {
   justify-content: center;
 }
 #Loading {
+  font-family: "Pixelify Sans", sans-serif;
   position: relative;
   top: 20%;
 }
