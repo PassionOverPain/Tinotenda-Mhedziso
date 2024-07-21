@@ -59,5 +59,6 @@ var hiddenElements = document.querySelectorAll(
 hiddenElements.forEach((el) => observer.observe(el));
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
+  // Lazy Loading :) //
   loader.style.display = "none";
 });
