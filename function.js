@@ -60,6 +60,9 @@ hiddenElements.forEach((el) => observer.observe(el));
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
   // Lazy Loading :) //
-  loader.style.display = "none";
-  this.document.body.style.overflowY = "scroll";
+  this.window.removeEventListener("load", load, false);
+  this.setTimeout(function () {
+    loader.style.display = "none";
+    this.document.body.style.overflowY = "scroll";
+  }, 2000);
 });
