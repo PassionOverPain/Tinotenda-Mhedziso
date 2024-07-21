@@ -22,6 +22,13 @@ html /* Very useful simple line of code down below ✔*/ {
   scroll-behavior: smooth;
 }
 
+#preloader {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
 .menu {
   margin: 0;
   position: fixed;
