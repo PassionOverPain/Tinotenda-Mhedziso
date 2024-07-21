@@ -57,3 +57,7 @@ var hiddenElements = document.querySelectorAll(
   ".Projects, .AboutMe, .Services"
 );
 hiddenElements.forEach((el) => observer.observe(el));
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
