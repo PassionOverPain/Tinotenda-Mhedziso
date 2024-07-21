@@ -45,6 +45,9 @@ html /* Very useful simple line of code down below ✔*/ {
   position: relative;
   top: 20%;
 }
+#Loading span {
+  font-family: "Open Sans", sans-serif;
+}
 .myName {
   color: #000;
 }
