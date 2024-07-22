@@ -19,24 +19,24 @@ function show(thingy) {
   document.getElementById(thingy).classList.add("Activeview");
 }
 let anime = true;
-const button = document.getElementById("Anime");
-button.addEventListener("click", animate);
+const abutton = document.getElementById("Anime");
+abutton.addEventListener("click", animate);
 let languages = document.getElementsByClassName("language");
 function animate() {
   if (anime) {
     anime = false;
-    button.textContent = "Animate✔";
-    window.location.assign(button.value);
+    abutton.textContent = "Animate✔";
+    window.location.assign(abutton.value);
     setTimeout(backHome, 2000);
   } else {
     anime = true;
-    button.textContent = "Animate✖";
-    window.location.assign(button.value);
+    abutton.textContent = "Animate✖";
+    window.location.assign(abutton.value);
     setTimeout(backHome, 2000);
   }
 }
 function backHome() {
-  window.location.assign();
+  window.location.assign(document.getElementById("hide").value);
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
 // on the user's screen, if not the item is hidden, if so then it loads in//
