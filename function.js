@@ -24,9 +24,6 @@ button.addEventListener("click", animate);
 let languages = document.getElementsByClassName("language");
 function animate() {
   if (anime) {
-    languages.forEach((language) => {
-      language.style.animationPlayState = "paused";
-    });
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
