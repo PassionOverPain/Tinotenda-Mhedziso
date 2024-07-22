@@ -24,6 +24,7 @@ button.addEventListener("click", animate);
 let languages = document.getElementsByClassName("language");
 function animate() {
   if (anime) {
+    alert(`${languages.style.getOwnPropertyNames}`);
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
