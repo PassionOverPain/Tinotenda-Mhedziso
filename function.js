@@ -41,7 +41,7 @@ function animate() {
 }
 function backHome() {
   window.location.assign(
-    "https://passionoverpain.github.io/Tinotenda-Mhedziso/#"
+    "https://passionoverpain.github.io/Tinotenda-Mhedziso/"
   );
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
