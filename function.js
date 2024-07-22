@@ -24,7 +24,7 @@ button.addEventListener("click", animate);
 // let languages = document.getElementsByClassName("language") Need to come back to THIS;
 function animate() {
   if (anime) {
-    document.getElementById("C").style.animationPlayState = "paused";
+    document.getElementById("C").style.animation = "none";
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
