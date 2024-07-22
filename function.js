@@ -21,19 +21,16 @@ function show(thingy) {
 let anime = true;
 const button = document.getElementById("Anime");
 button.addEventListener("click", animate);
-// let languages = document.getElementsByClassName("language") Need to come back to THIS;
+let languages = document.getElementsByClassName("language");
 function animate() {
   if (anime) {
-    document.getAnimations().forEach((anim) => {
-      anim.cancel();
-    });
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
     setTimeout(backHome, 2000);
   } else {
     document.getAnimations().forEach((anima) => {
-      anima.play;
+      anima.play();
     });
     anime = true;
     button.textContent = "Animate✖";
