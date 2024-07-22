@@ -204,7 +204,7 @@ h1:hover span {
   padding: 2%;
   border-radius: 10em;
   text-shadow: 0 0 0.125em rgb(3, 182, 146), 0 0 0.25em lime;
-  box-shadow: inset 0 0 1em lime, 0 0 0.5em lime;
+
   position: relative;
 }
 .Contactbtn::before {
@@ -544,7 +544,7 @@ h1:hover span {
 #Anime {
   position: relative;
   display: inline-block;
-  margin-top: 20%;
+  margin-top: 5%;
   width: 50%;
   size: 10%;
   background-color: transparent;
