@@ -25,7 +25,7 @@ function animate() {
   if (anime) {
     anime = false;
     button.textContent = "Animate✔";
-    window.location.pathname = "#ProjectsSection";
+    window.location.assign("/index.html#AboutSection");
   } else {
     anime = true;
     button.textContent = "Animate✖";
