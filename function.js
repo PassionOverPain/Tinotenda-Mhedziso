@@ -30,6 +30,9 @@ function animate() {
   } else {
     anime = true;
     button.textContent = "Animate✖";
+    window.location.assign("/index.html#ContactSection");
+    setTimeout(1000);
+    window.location.assign("/");
   }
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
