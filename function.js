@@ -25,7 +25,8 @@ function animate() {
   if (anime) {
     anime = false;
     button.textContent = "Animate✔";
-    window.location.assign("/index.html#AboutSection");
+    window.location.assign("/index.html#ContactSection");
+    window.location.assign("/");
   } else {
     anime = true;
     button.textContent = "Animate✖";
