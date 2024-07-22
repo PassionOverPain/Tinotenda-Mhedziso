@@ -32,6 +32,9 @@ function animate() {
     window.location.assign("/index.html#ContactSection");
     setTimeout(backHome, 2000);
   } else {
+    document.getAnimations().forEach((anima) => {
+      anima.play;
+    });
     anime = true;
     button.textContent = "Animate✖";
     window.location.assign("/index.html#ContactSection");
