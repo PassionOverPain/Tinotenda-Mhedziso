@@ -27,13 +27,13 @@ function animate() {
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
     setTimeout(1000);
-    window.location.assign("/");
+    window.location.assign("/index.html#Home");
   } else {
     anime = true;
     button.textContent = "Animate✖";
     window.location.assign("/index.html#ContactSection");
     setTimeout(1000);
-    window.location.assign("/");
+    window.location.assign("/index.html#Home");
   }
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
