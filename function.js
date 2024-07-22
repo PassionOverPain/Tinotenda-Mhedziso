@@ -21,10 +21,9 @@ function show(thingy) {
 let anime = true;
 const button = document.getElementById("Anime");
 button.addEventListener("click", animate);
-let languages = document.getElementsByClassName("language");
+// let languages = document.getElementsByClassName("language") Need to come back to THIS;
 function animate() {
   if (anime) {
-    alert(`${languages.style.getOwnPropertyNames}`);
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
