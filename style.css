@@ -304,7 +304,7 @@ h1:hover span {
 .View.Activeview {
   display: block; /*Makes the selected area visible*/
 }
-.View img {
+.language {
   filter: grayscale(1.2);
   width: 5vw;
   display: block; /*This might cause some issues elsewhere...*/
