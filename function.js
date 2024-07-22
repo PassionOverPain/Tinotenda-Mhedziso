@@ -27,7 +27,7 @@ function animate() {
     button.textContent = "Animate✔";
   } else {
     anime = true;
-    button.textContent = "Animate❌";
+    button.textContent = "Animate✖";
   }
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
