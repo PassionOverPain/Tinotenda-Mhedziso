@@ -26,6 +26,7 @@ function animate() {
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
+    setTimeout(1000);
     window.location.assign("/");
   } else {
     anime = true;
