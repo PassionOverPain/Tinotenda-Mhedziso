@@ -26,13 +26,12 @@ function animate() {
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
-    setTimeout(1000);
+    setTimeout(backHome, 2000);
   } else {
     anime = true;
     button.textContent = "Animate✖";
     window.location.assign("/index.html#ContactSection");
-    setTimeout(1000);
-    window.location.assign("/index.html#Home");
+    setTimeout(backHome, 2000);
   }
 }
 function backHome() {
