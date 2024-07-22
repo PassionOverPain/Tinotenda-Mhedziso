@@ -21,10 +21,12 @@ function show(thingy) {
 let anime = true;
 const button = document.getElementById("Anime");
 button.addEventListener("click", animate);
-let language = document.getElementsByClassName("language");
+let languages = document.getElementsByClassName("language");
 function animate() {
   if (anime) {
-    language.style.animationPlayState = "paused";
+    languages.forEach((language) => {
+      language.style.animationPlayState = "paused";
+    });
     anime = false;
     button.textContent = "Animate✔";
     window.location.assign("/index.html#ContactSection");
