@@ -22,13 +22,13 @@ let anime = true;
 const button = document.getElementById("Anime");
 button.addEventListener("click", animate);
 function animate() {
-  // if (anime) {
-  //   anime = false;
-  //   button.textContent = "Animate✔";
-  // } else {
-  //   anime = true;
-  //   button.textContent = "Animate❌";
-  // }
+  if (anime) {
+    anime = false;
+    button.textContent = "Animate✔";
+  } else {
+    anime = true;
+    button.textContent = "Animate❌";
+  }
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
 // on the user's screen, if not the item is hidden, if so then it loads in//
