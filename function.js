@@ -35,7 +35,7 @@ function animate() {
   }
 }
 function backHome() {
-  window.location.assign("/index.html#Home");
+  window.location.assign("/index.html#");
 }
 //This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
 // on the user's screen, if not the item is hidden, if so then it loads in//
