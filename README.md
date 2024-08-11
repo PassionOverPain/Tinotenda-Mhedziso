@@ -5,16 +5,16 @@ This repository is the backend for my portfolio website that includes:
   <li>My services</li>
   <li>My selected projects to showcase</li>
   <li>My social pages</li>
-  <li>My personal chatbot named <b>Passion</b></li>
+  <li>My personal chatbot named <b>Passion</b>😌</li>
 </ul>
-  You can view the live site here: https://passionoverpain.github.io/Tinotenda-Mhedziso/
+  You can view the live site here: https://tinotenda-mhedziso.pages.dev/
   
 # Build 👷🏿‍♂️
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
   <li>Chatbot Integration</li>
+  <li>CSS</li>
+  <li>HTML</li>
+  <li>JavaScript</li>
   <li>Webhooks and Make.com Integration</li>
 </ul>
 
