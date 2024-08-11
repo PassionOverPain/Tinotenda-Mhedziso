@@ -14,6 +14,8 @@ This repository is the backend for my portfolio website that includes:
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
+  <li>Chatbot Integration</li>
+  <li>Webhooks and Make.com Integration</li>
 </ul>
 
 # Contribution 🤝🏿🤝🏼
