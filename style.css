@@ -625,7 +625,7 @@ h1:hover span {
   }
   .AboutC1,
   .AboutC2 {
-    flex-basis: 100%;
+    flex-basis: 100%; /*This is used to make the columns stack on top of each other*/
   }
   .AboutMe p {
     font-size: 0.6em;
@@ -677,5 +677,56 @@ h1:hover span {
   }
   #preloader {
     background-size: 40%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  /* Preloader text */
+  #Loading {
+    font-size: 2em;
+  }
+
+  /* Menu Position */
+  .menu {
+    left: 85vw;
+    top: 10vh;
+  }
+
+  #Me {
+    font-size: 1.5em;
+    /* As bg is green and text is white but not visible */
+    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
+  }
+
+  /* Buttons have small text and are not visible */
+  .Contactbtn {
+    font-size: 1.5em;
+    text-shadow: 0 0 0.125em rgb(3, 182, 146), 0 0 0.25em lime;
+  }
+  .AboutMe .row {
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* Make Image smaller */
+  .row img {
+    aspect-ratio: 1/1;
+    /* Image is dull and stretched */
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .Programming {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #0f0;
+    gap: 2px;
+  }
+  .servicesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
   }
 }
