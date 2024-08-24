@@ -8,7 +8,12 @@ This repository is the backend for my portfolio website that includes:
   <li>My personal chatbot named <b>Passion</b>😌</li>
 </ul>
   You can view the live site here: https://tinotenda-mhedziso.pages.dev/
-  
+  <br>
+  Theme is based on my favourite color, a Peacock aesthetic and a video game/hacker type narrative
+
+  # Preview 🖥
+  ![image](https://github.com/user-attachments/assets/b41c8d06-667a-48e0-80c8-0a03a57a4e79)
+
 # Build 👷🏿‍♂️
 <ul>
   <li>Chatbot Integration</li>
