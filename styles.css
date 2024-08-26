@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Pixelify Sans', sans-serif;
+  --primary-color: #000;
+  --secondary-color: #f5f5f5;
+  --tertiary-color: #0f0;
+  --mute-color: #999;
+  --dark-brownish-green: #2c3e50;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul,
+li {
+  list-style: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.shadow {
+  box-shadow:
+    0 0 5px var(--tertiary-color),
+    0 0 15px var(--tertiary-color);
+}
+
+.t-shadow {
+  text-shadow:
+    0 0 1px var(--tertiary-color),
+    0 0 3px var(--primary-color);
+}
+
+/* Styles for main */
+main {
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Styles for section */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+/* Styles for hero */
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url(Images/cyberspace.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: clamp(2rem, 5vw, 5rem);
+}
+
+.hero .hero-content h3 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+}
+
+.hero .hero-content h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.hero .hero-content h1 span {
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.hero .hero-content h4 {
+  color: var(--mute-color);
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding-left: clamp(0.5rem, 2vw, 1rem);
+}
+
+.hero .hero-content .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: clamp(1rem, 2vw, 2rem);
+}
+
+.hero .hero-content .btns a {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 700;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+
+.hero .hero-content .btns a:hover {
+  background-color: var(--tertiary-color);
+  /* I would not recommend using this box-shadow on hover */
+  box-shadow:
+    0 0 5px var(--tertiary-color),
+    0 0 15px var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+/* Styles for about */
+.about {
+  padding: clamp(2rem, 5vw, 5rem) 0;
+}
+.about .about-content {
+  gap: 2rem;
+}
+
+.about .about-content .info {
+  text-align: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  padding: 2rem;
+}
+
+.about .about-content .info h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.about .about-content .info p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-align: center;
+}
+
+.about .about-content .info p a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
+
+.tech-stacks,
+.school,
+.work,
+.services,
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.tech-stacks h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.tech-stacks .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-stacks .icons i,
+.tech-stacks .icons svg {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--tertiary-color);
+  filter: drop-shadow(0 0 5px var(--tertiary-color));
+  fill: var(--tertiary-color);
+}
+
+.tech-stacks .icons i:hover,
+.tech-stacks .icons svg:hover {
+  color: var(--dark-brownish-green);
+  filter: drop-shadow(0 0 5px var(--dark-brownish-green));
+  fill: var(--dark-brownish-green);
+}
+
+.school,
+.work {
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.school h2,
+.work h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.school dl,
+.work dl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.school dl dt,
+.work dl dt {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.school dl dd,
+.work dl dd {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding-left: clamp(0.5rem, 2vw, 1rem);
+  font-weight: 700;
+}
+
+.services h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.services .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2c3e5055;
+  transition: all 0.3s;
+}
+
+.services .card:hover {
+  box-shadow:
+    0 0 5px var(--tertiary-color),
+    0 0 15px var(--tertiary-color);
+}
+
+.services .card .card-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services .card .card-content .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services .card .card-content .header i {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--tertiary-color);
+  filter: drop-shadow(0 0 5px var(--tertiary-color));
+}
+
+.services .card .card-content .header h3 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.services .card .card-content .details {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-align: center;
+}
+
+.services .card .card-content .details p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-align: center;
+}
+
+.services .card .card-content .details a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
+
+.projects h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.projects .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2c3e5055;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.projects .project:hover {
+  box-shadow:
+    0 0 5px var(--tertiary-color),
+    0 0 15px var(--tertiary-color);
+}
+
+.projects .project .project-content img {
+  border-radius: 1rem;
+}
+
+.projects .project .project-content img:hover ~ .overlay-info {
+  display: flex;
+}
+
+.projects .project .project-content .overlay-info {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.projects .project .project-content .overlay-info h3 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
+}
+
+.projects .project .project-content .overlay-info p {
+  font-size: clamp(0.4rem, 2vw, 1rem);
+  text-align: center;
+}
+
+.projects .project .project-content .overlay-info a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
+}
+
+.projects .project .project-content .overlay-info a:hover {
+  color: var(--dark-brownish-green);
+}
+
+.projects .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.projects .btns a {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 700;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+
+.btns a:hover {
+  background-color: var(--tertiary-color);
+  /* I would not recommend using this box-shadow on hover */
+  box-shadow:
+    0 0 5px var(--tertiary-color),
+    0 0 15px var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+
+@media (max-width: 768px) {
+  .school,
+  .work {
+    max-width: 100%;
+  }
+}

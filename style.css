@@ -1,732 +1,310 @@
-/** @format */
-/* Fonts down below */
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Pixelify Sans', sans-serif;
+  --primary-color: #000;
+  --secondary-color: #f5f5f5;
+  --tertiary-color: #0f0;
+  --mute-color: #999;
+  --dark-brownish-green: #2c3e50;
+}
+
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  color: gray;
-  align-items: center;
-  min-height: fit-content;
-  background: #000000;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  /* font-family: "Pixelify Sans", sans-serif; */
+a {
+  text-decoration: none;
 }
-html /* Very useful simple line of code down below ✔*/ {
+img {
+  width: 100%;
+  height: auto;
+}
+ul,
+li {
+  list-style: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
-#preloader {
-  background-color: #000;
-  background-image: url(Images/cat.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 1000000; /* hehe I know 🤣😅*/
-  color: #0f0;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-#Loading {
-  font-family: "Pixelify Sans", sans-serif;
-  position: relative;
-  top: 20%;
-}
-#Loading span {
-  font-family: "Open Sans", sans-serif;
-}
-.myName {
-  color: white;
-}
-.menu {
-  margin: 0;
-  position: fixed;
-  left: 75vw;
-  top: -10vh;
-  width: 20px;
-  height: 260px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100000; /*This is what I was looking for ;)*/
-}
-.menu li {
-  position: absolute;
-  left: 50%;
-  list-style: none;
-  transform-origin: 180px;
-  transition: 0.5s;
-  transition-delay: calc(0.1s * var(--i));
-  transform: rotate(0deg) translateX(-30px);
-}
-.menu li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  font-size: 1.5em;
-  border-radius: 50%;
-  transform: rotate(
-    calc(360deg / -8 * var(--i))
-  ); /*Might need to change 8 items*/
-  color: transparent;
-  transition: 1s;
-  transition-delay: 0.5s;
-}
-.menu.active {
-  left: 35%;
-  top: 30%;
-}
-.menu.active li a {
-  color: var(--clr);
-}
-.menu li a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  border-radius: 2px;
-  background-color: var(--clr);
-  transform: rotate(calc(var(--i) * 90deg)) translate(0, 25px);
-  transition: height 0.5s, width 0.5s, transform 0.5s;
-  transition-delay: 0s, 0s, 0s;
-}
-.menu.active li a::before {
-  width: 60px;
-  height: 60px;
-  border: 2px solid var(--clr);
-  box-sizing: border-box;
-  background: #000713;
-  transform: rotate(calc(var(--i) * 90deg)) translate(0px, 0px);
-  transition: transform 0.5s, height 0.5s, width 0.5s;
-  transition-delay: 1s, 1.5s, 1.5s;
-  rotate: 135deg;
-}
-.menu.active li:hover a::before {
-  background: var(--clr);
-  color: #000713;
-  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
-}
-.menu.active li {
-  transform: rotate(
-    calc(360deg / 8 * var(--i))
-  ); /*Might need to change 8 items*/
-}
-.menu li a::after {
-  content: "";
-  position: absolute;
-  left: 80%;
-  width: 20px;
-  height: 2px;
-  background: var(--clr);
-  z-index: -1;
-  transform: rotate(calc(var(--i) * 0deg)) translate(15px, 0px);
-  transition: 0.5s;
-  transition-delay: 0.5s;
+body {
+  font-family: var(--font-primary);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
 }
 
-.menu.active li:hover a ion-icon {
-  position: relative;
-  color: #000713;
-  z-index: 100000;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-.menuToggle {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  color: #fff;
+
+/* Main Styles */
+main,
+section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 2em;
-  transition: transform 1.5s;
+  width: 100%;
 }
-.menu.active .menuToggle {
-  transform: rotate(315deg);
-  left: 800%;
+
+main {
+  min-height: 100vh;
 }
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
+section {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+/* Hero Styles */
+.hero {
   height: 100vh;
-  background-color: black;
-  background-image: url(Images/cyberspace.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url(Images/cyberspace.webp);
   background-size: cover;
   background-position: center;
-  color: white;
-  font-family: "Pixelify Sans", sans-serif;
-}
-h1 {
   position: relative;
-  font-size: 2em;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  font-weight: 500;
-}
-h1 span {
-  color: black;
-  transition: 0.25s;
-}
-h1:hover span {
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
-}
-.Contactbtn {
-  margin-top: 10%;
-  width: 50%;
-  size: 10%;
-  background-color: transparent;
-  font-size: 1rem;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  border: #0f0 1.25em soild;
-  color: #ffffff;
-  padding: 2%;
-  border-radius: 10em;
-  text-shadow: 0 0 0.125em rgb(3, 182, 146), 0 0 0.25em lime;
-  position: relative;
-}
-#hide {
-  display: none;
-}
-.Contactbtn::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  background: limegreen;
-  top: 120%;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transform: perspective(1em) rotateX(30deg) scale(1, 0.3);
-  filter: blur(1.5em);
-  opacity: 0.7;
-}
-.Contactbtn::after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  right: 0;
-  left: 0%;
-  bottom: 0%;
-  box-shadow: 0 0 2em 0.5em lime;
-  opacity: 0;
-  transition: opacity 100ms linear;
-}
-.Contactbtn:hover::after {
-  opacity: 1;
-}
-.Contactbtn:hover,
-.Contactbtn:focus {
-  background: #0f0;
-  transform: scale(1.1);
-}
-.AboutMe {
-  text-align: start;
-  background-color: rgb(0, 5, 4);
-  height: fit-content;
-  color: #ababab;
-  flex-wrap: wrap;
-  opacity: 0; /*Added this*/
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  height: fit-content;
-}
-.AboutC1 {
-  flex-basis: 25%;
-}
-#Tino {
-  width: 100%;
-  border-radius: 100%;
-}
-.AboutC2 {
-  flex-basis: 70%;
-}
-.subTitle {
-  display: block;
-  color: white;
-  font-size: 3em;
-  font-weight: 600;
-  margin-bottom: 5px;
-  padding: 0.5%;
-  position: relative;
-  top: 0.5%;
-  font-family: "Pixelify Sans", sans-serif;
-}
-.AboutMe p {
-  background-color: #001908;
-  padding: 15px;
-  border-radius: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  position: relative;
-  top: 5%;
-  font-size: 1.1rem;
-  height: fit-content;
-  letter-spacing: 3px;
-  margin-right: 10px;
-}
-.Extra {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  display: flex;
-  font-size: 1.9rem;
-  color: #fff;
-}
-.View {
-  display: none;
-  position: relative;
-  font-size: 1.3rem;
-  letter-spacing: 3px;
-}
-.View.Activeview {
-  display: block; /*Makes the selected area visible*/
-}
-.language {
-  filter: grayscale(1.2);
-  width: 5vw;
-  display: block; /*This might cause some issues elsewhere...*/
-  animation-name: floaty;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-}
-@keyframes floaty {
-  50% {
-    transform: rotate(360deg);
-  }
-}
-.Programming {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  color: #0f0;
-  gap: 2px;
-}
-#TechStack {
-  margin-right: 20px;
-  cursor: pointer;
-  font-family: "Pixelify Sans", sans-serif;
-}
-#Education {
-  margin-right: 20px;
-  cursor: pointer;
-  font-family: "Pixelify Sans", sans-serif;
-}
-#Experience {
-  margin-right: 20px;
-  cursor: pointer;
-  font-family: "Pixelify Sans", sans-serif;
-}
-.View span {
-  font-family: "Pixelify Sans", sans-serif;
+  padding: clamp(2rem, 5vw, 5rem);
 }
 
-.Viewpoint::after {
-  content: "";
-  width: 0px;
-  height: 3px;
-  background: #0f0;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
-}
-.Viewpoint.Activepoint::after {
-  width: 100%;
-}
-.View ul {
-  list-style: none;
-}
-.Services {
-  text-align: start;
-  height: fit-content;
-  color: #ababab;
-  flex-wrap: wrap;
-  opacity: 0; /*Added this*/
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-.servicesList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: center;
-  justify-content: center;
+.hero .hero-content h3,
+.hero .hero-content h1,
+.hero .hero-content h4 {
   text-align: center;
-  grid-gap: 1rem;
-  margin-top: 50px;
 }
-.servicesList div {
-  width: fit-content;
-  position: relative;
-  background-color: #001908;
-  padding: 30px;
-  font-size: 20px;
-  font-weight: 300;
-  border-radius: 10px;
-  cursor: default;
-  transition: background-color 0.5s, transform 0.5s;
-  margin-right: 40px;
+
+.hero .hero-content h3 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
 }
-.servicesList div ion-icon {
-  font-size: 50px;
-  margin-bottom: 10px;
-  color: #0f0;
+
+.hero .hero-content h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
-.servicesList div h2 {
-  font-size: 30px;
-  font-weight: 100;
-  color: #fff;
-  font-family: "Pixelify Sans", sans-serif;
+
+.hero .hero-content h1 span,
+.hero .hero-content h4 {
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  text-shadow: 0 0 1px var(--tertiary-color), 0 0 3px var(--primary-color);
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
 }
-.servicesList div a {
-  text-decoration: none;
-  color: #0f0;
-  font-size: 12px;
-  display: inline-block;
-  transition: border 0.5s; /*This is not working the way I want it to*/
+
+.hero .hero-content h4 {
+  color: var(--mute-color);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding-left: clamp(0.5rem, 2vw, 1rem);
 }
-.servicesList div a:hover {
-  border-bottom: solid 1px green;
-}
-.servicesList div:hover {
-  background-color: #000713;
-  transform: translateY(-10px);
-}
-.Projects {
-  background-color: rgb(0, 5, 4);
-  padding: 2px 0;
-  text-align: start;
-  height: fit-content;
-  color: #ababab;
-  flex-wrap: wrap;
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-.projectsList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 10px;
-}
-.project {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-.project img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-}
-#CreateIT {
-  width: 60%;
-}
-.layer {
-  width: 100%;
-  height: 0%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #001908);
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
+
+.hero .hero-content .btns {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: clamp(1rem, 2vw, 2rem);
+}
+
+.hero .hero-content .btns a {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 700;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+
+.hero .hero-content .btns a:hover {
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 5px var(--tertiary-color), 0 0 15px var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+/* About Styles */
+.about,
+.tech-stacks,
+.school,
+.work,
+.services,
+.projects {
+  padding: 2rem;
+}
+
+.about .about-content,
+.tech-stacks,
+.school,
+.work,
+.services,
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 0 40px;
+  gap: 1rem;
+}
+
+.about .about-content .info {
   text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 2rem);
+  padding: 2rem;
 }
-.layer h3 {
-  font-family: "Pixelify Sans", sans-serif;
-  font-weight: 1000;
-  margin-bottom: 20px;
+
+.about .about-content .info h2,
+.tech-stacks h2,
+.school h2,
+.work h2,
+.services h2,
+.projects h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
 }
-.eye {
-  margin-top: 20px;
-  color: #001908;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 70px;
-  width: 60px;
-  height: 60px;
-  background-color: #0f0;
+
+.about .about-content .info p,
+.services .card .card-content .details p,
+.projects .project .project-content .overlay-info p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
   text-align: center;
-  border-radius: 50%;
 }
-.person {
-  text-decoration: none;
-  color: #0f0;
-  font-family: "Pixelify Sans", sans-serif;
+
+.about .about-content .info p a,
+.services .card .card-content .details a,
+.projects .project .project-content .overlay-info a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
 }
-.project:hover img {
-  transform: scale(1.1);
+
+.about .about-content .info p a:hover,
+.services .card .card-content .details a:hover,
+.projects .project .project-content .overlay-info a:hover {
+  color: var(--dark-brownish-green);
 }
-.project:hover .layer {
+
+.tech-stacks .icons i,
+.tech-stacks .icons svg,
+.services .card .card-content .header i {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--tertiary-color);
+  filter: drop-shadow(0 0 5px var(--tertiary-color));
+  fill: var(--tertiary-color);
+}
+
+.tech-stacks .icons i:hover,
+.tech-stacks .icons svg:hover,
+.services .card .card-content .header i:hover {
+  color: var(--dark-brownish-green);
+  filter: drop-shadow(0 0 5px var(--dark-brownish-green));
+  fill: var(--dark-brownish-green);
+}
+
+.school dl,
+.work dl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.school dl dt,
+.work dl dt {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.school dl dd,
+.work dl dd {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding-left: clamp(0.5rem, 2vw, 1rem);
+  font-weight: 700;
+}
+
+.services .card,
+.projects .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2c3e5055;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.services .card:hover,
+.projects .project:hover {
+  box-shadow: 0 0 5px var(--tertiary-color), 0 0 15px var(--tertiary-color);
+}
+
+.projects .project .project-content img {
+  border-radius: 1rem;
+}
+
+.projects .project .project-content .overlay-info {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 1;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
 }
-.btn {
-  display: block;
-  margin: 30px auto;
-  width: fit-content;
-  border: 1px solid #001908;
-  padding: 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: white;
-  transition: background-color 0.5s;
+
+.projects .project .project-content img:hover ~ .overlay-info {
+  display: flex;
 }
-.btn:hover {
-  background-color: #0f0;
+
+.projects .project .project-content .overlay-info h3 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.1rem;
 }
-.Contact {
-  background-color: #001908;
-  padding: 2px 0;
-  height: fit-content;
-  color: #ababab;
-  display: block;
+
+.projects .project .project-content .overlay-info p {
+  font-size: clamp(0.4rem, 2vw, 1rem);
   text-align: center;
-  position: relative;
-}
-.Contact h3 {
-  margin-bottom: 0;
-  display: block;
-  flex-basis: 60%;
-}
-.Contact a {
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.3em;
-}
-.Social-Icons a {
-  font-size: 70px;
-  display: inline-block;
-  margin-top: 1%;
-}
-.Copyright {
-  color: white;
-  position: relative;
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-#Anime {
-  position: relative;
-  display: inline-block;
-  margin-top: 5%;
-  width: 50%;
-  size: 10%;
-  background-color: transparent;
-  font-size: 1rem;
-  display: inline-block;
-  cursor: pointer;
-  border: #001908 1.25em soild;
-  color: #ffffff;
-  padding: 2%;
-  border-radius: 10em;
-}
-#Anime:hover {
-  transform: scale(1.1);
-}
-/*------------------------------------Responsive Design--------------------------------------------------------*/
-@media only screen and (min-width: 251px) and (max-width: 600px) /* 250px optimisation to come */ {
-  .header {
-    display: inline-block;
-  }
-  #Me {
-    font-size: 0.9em;
-    text-align: center;
-  }
-  .menu {
-    left: 88vw;
-    bottom: 0vh;
-  }
-  .menu li {
-    transform-origin: 125px;
-  }
-  .menu.active .menuToggle {
-    left: 500%;
-  }
-  .menu.active {
-    left: 15vw;
-    top: 30vh;
-    font-size: 0.9em;
-  }
-  .menu.active li a::before {
-    width: 40px;
-    height: 40px;
-  }
-  .menu li a::after {
-    display: none;
-  }
-
-  .row img {
-    width: 35vw;
-    border-radius: 50%;
-  }
-  .subTitle {
-    font-size: 1.9em;
-  }
-  .row {
-    display: inline-block;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-    height: fit-content;
-  }
-  .Extra {
-    width: 100vw;
-    font-size: 0.8rem;
-    align-items: center;
-    justify-content: center;
-  }
-  .View {
-    font-size: 0.5rem;
-  }
-  #Skills {
-    margin-left: 15px;
-  }
-  .AboutMe {
-    width: 100%;
-    height: fit-content;
-  }
-  .AboutC1,
-  .AboutC2 {
-    flex-basis: 100%; /*This is used to make the columns stack on top of each other*/
-  }
-  .AboutMe p {
-    font-size: 0.6em;
-  }
-  .View img {
-    width: 10vw;
-    float: none;
-  }
-  .Services {
-    text-align: center;
-    height: fit-content;
-  }
-  .servicesList {
-    margin-left: 15px;
-    justify-content: center;
-  }
-  .Projects {
-    text-align: center;
-    height: fit-content;
-  }
-  .project {
-    width: 100%;
-    height: fit-content;
-  }
-  .servicesList {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  .servicesList div {
-    display: inline-block;
-    padding: 10px;
-    font-size: 0.7em;
-    width: fit-content;
-  }
-  .servicesList div ion-icon {
-    font-size: 40px;
-  }
-  .servicesList div h2 {
-    font-size: 20px;
-  }
-  .Contact {
-    position: relative;
-    font-size: 0.6rem;
-  }
-  .project img {
-    height: 65vh;
-  }
-  #preloader {
-    background-size: 40%;
-  }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
-  /* Preloader text */
-  #Loading {
-    font-size: 2em;
-  }
-
-  /* Menu Position */
-  .menu {
-    left: 85vw;
-    top: 10vh;
-  }
-
-  #Me {
-    font-size: 1.5em;
-    /* As bg is green and text is white but not visible */
-    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
-  }
-
-  /* Buttons have small text and are not visible */
-  .Contactbtn {
-    font-size: 1.5em;
-    text-shadow: 0 0 0.125em rgb(3, 182, 146), 0 0 0.25em lime;
-  }
-  .AboutMe .row {
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  /* Make Image smaller */
-  .row img {
-    aspect-ratio: 1/1;
-    /* Image is dull and stretched */
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .Programming {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: #0f0;
-    gap: 2px;
-  }
-  .servicesList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-content: center;
-  }
-}
+/* Buttons */
+.btns a {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 700;

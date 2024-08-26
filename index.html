@@ -1,459 +1,349 @@
-<!-- @format -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <meta
       name="description"
       content="This is a portfolio website for Tinotenda Lincoln Mhedziso containing Tino's biography and social profiles such as LinkedIn and GitHub." />
     <meta
       name="keywords"
-      content="Tinotenda Mhedziso, porfolio website, PassionOverPain" />
+      content="Tinotenda Mhedziso, portfolio website, PassionOverPain" />
     <meta name="author" content="Tinotenda Mhedziso" />
     <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon" />
 
     <title>Tinotenda Mhedziso's portfolio website</title>
   </head>
   <body>
-    <div id="preloader">
-      <div id="Loading">Loading....Please be Patient <span>:)</span></div>
-    </div>
+    <main class="flex-center column">
+      <!-- Hero Section Start -->
+      <section class="hero">
+        <div class="hero-content">
+          <h3>Hey,</h3>
+          <h1>
+            I'm
+            <span class='t-shadow'>Tinotenda Mhedziso</span>
+          </h1>
+          <h4 class='t-shadow'>A Software Developer</h4>
+          <div class="btns">
+            <a href="#">Contact Me</a>
+          </div>
+        </div>
+        <!-- We can Add A Image Here -->
+      </section>
+      <!-- Hero Section End -->
 
-    <!-------------------------------------------Header Start----------------------------------------------------------------------------------->
-    <header>
-      <div id="Me">
-        <h3>Hey,</h3>
-        <h1 class="myName">I'm Tinotenda Mhedziso</h1>
-        <h4>A Software Developer</h4>
-        <a href="#ContactSection">
-          <button class="Contactbtn">Contact Me</button>
-        </a>
-        <button id="Anime" value="#ContactSection">Animate✖</button>
-        <button id="hide" value="#"></button>
-      </div>
-      <nav>
-        <ul class="menu">
-          <div class="menuToggle">
-            <ion-icon name="add-outline"></ion-icon>
+      <!-- About Section Start -->
+      <section class="about">
+        <div class="about-content flex-center column">
+          <div class="info flex-center column">
+            <h2>About Me</h2>
+            <p>
+              I'm pursuing a
+              <strong>Bachelor of Information Technology</strong>
+              and have a strong foundation from
+              <a href="#high-school">high school</a>
+              . My main strength is
+              <strong>C#</strong>
+              . Programming is like defeating a tough video game boss:
+              challenging but achievable with persistence. I'm here to help with
+              any challenges.
+            </p>
           </div>
-          <li style="--i: 0; --clr: #04fc43">
-            <a href="#"
-              ><ion-icon name="home-outline" title="Home"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 1; --clr: #04fc43">
-            <a href="#AboutSection"
-              ><ion-icon name="person-outline" title="About Me"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 2; --clr: #04fc43">
-            <a href="#ServicesSection"
-              ><ion-icon name="people-outline" title="Services"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 3; --clr: #04fc43">
-            <a href="#ProjectsSection"
-              ><ion-icon name="desktop-outline" title="Projects"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 4; --clr: #04fc43">
-            <a href="mailto:tinomhedziso21@gmail.com"
-              ><ion-icon name="mail-outline" title="Contact Me"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 5; --clr: #04fc43">
-            <a
-              href="https://www.linkedin.com/in/tinotenda-mhedziso/"
-              target="_blank"
-              ><ion-icon
-                name="logo-linkedin"
-                title="My LinkedIn profile"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 6; --clr: #04fc43">
-            <a href="https://www.github.com/PassionOverPain" target="_blank"
-              ><ion-icon name="logo-github" title="My GitHub profile"></ion-icon
-            ></a>
-          </li>
-          <li style="--i: 7; --clr: #04fc43">
-            <a
-              href="Documents/TinotendaMhedziso-CV.pdf"
-              download
-              target="_blank"
-              ><ion-icon
-                name="download-outline"
-                title="Download My CV"></ion-icon
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <br />
-      <!----------------------------------------About Section-------------------------------------------------------->
-      <section class="AboutMe" id="AboutSection">
-        <div class="row">
-          <div class="AboutC1">
+          <!--You can Add Image here-->
+        </div>
+
+        <div class="tech-stacks">
+          <h2>Technologies I work with</h2>
+          <div class="icons">
+            <i class="fab fa-html5"></i>
+            <i class="fa fa-c">
+              <i class="fas fa-hashtag"></i>
+            </i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-github"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-r-project"></i>
+            <i class="fab fa-unity"></i>
+            <i class="fa fa-file-code"></i>
+          </div>
+        </div>
+
+        <div class="school">
+          <h2>Learning Activities</h2>
+          <dl>
+            <dt id="high-school">High School</dt>
+            <dd>Victoria Park High School [2018-2022]</dd>
+
+            <dt>Academic Reward</dt>
+            <dd>
+              <ul>
+                <li>Academic top 10</li>
+                <li>Head Prefect</li>
+                <li>President of The Representative Council of Learners</li>
+              </ul>
+            </dd>
+
+            <dt>Academic Activities</dt>
+            <dd>
+              <ul>
+                <li>Chess</li>
+                <li>Robotics and Coding</li>
+              </ul>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>University</dt>
+            <dd>Nelson Mandela University [2023-2025]</dd>
+
+            <dt>Bachelor's degree</dt>
+            <dd>Information Technology Academic</dd>
+
+            <dt>Academic Activities</dt>
+            <dd>
+              <ul>
+                <li>Computer Society Executive</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="work">
+          <h2>Work Experience</h2>
+          <dl>
+            <dt>Society Experience</dt>
+            <dd>Events Coordinator of the NMU Computer Society [2024]</dd>
+
+            <dt>Working Experience</dt>
+            <dd>Oasis Infobyte Junior Web Development Intern [2024]</dd>
+          </dl>
+        </div>
+      </section>
+      <!-- About Section End -->
+      <!--Services Section Start-->
+      <section class="services">
+        <h2>Services</h2>
+        <div class="card">
+          <div class="card-content">
+            <div class="header">
+              <i class="fas fa-gamepad"></i>
+              <h3>Game Development</h3>
+            </div>
+
+            <div class="details">
+              <p>
+                Game development is the art of creating innovative applications
+                that offer a level of challenge and reward the Player for
+                overcoming that challenge. I do not offer this service
+                professionally rather as a hobby, I craft story driven concepts
+                into entertaining creations.
+              </p>
+              <div class="reference">
+                <a
+                  href="https://www.freecodecamp.org/news/what-is-game-development/"
+                  target="_blank"
+                  title="This is a link to a freecodecamp webpage that describes game development">
+                  Learn More about game development
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="header">
+              <i class="fas fa-database"></i>
+              <h3>Database Design and Development</h3>
+            </div>
+
+            <div class="details">
+              <p>
+                In a data centered age, Databases facilitate the storage,
+                retrieval and manipulation of Important Information to ensure
+                the results are obtained timeously. As a Database administrator,
+                I ensure that the data warehousing of your entity is optimised
+                and operational at all times.
+              </p>
+              <div class="reference">
+                <a
+                  href="https://webheadtech.com/blog/database-development/#:~:text=Database%20development%20is%20designing%2C%20creating,meet%20the%20needs%20of%20business."
+                  target="_blank"
+                  title="This is a link to a webheadtech webpage that describes database development">
+                  Learn More about database development
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="header">
+              <i class="fas fa-window-restore"></i>
+              <h3>Windows Applications Development</h3>
+            </div>
+
+            <div class="details">
+              <p>
+                Windows is the most used operating system currently and the
+                software that is available for Windows grows extensively by the
+                minute. Modernise your business entity by including desktop
+                application for a more professional experience.
+              </p>
+              <div class="reference">
+                <a
+                  href="https://syndelltech.com/steps-to-develop-windows-application/#:~:text=Windows%20application%20development%20refers%20to,systems%20and%20immersive%20multimedia%20experiences."
+                  target="_blank"
+                  title="This is a link to a syndeltech webpage that defines what windows applications development is">
+                  Learn More about windows app development
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="header">
+              <i class="fas fa-globe"></i>
+              <h3>Web Applications Development</h3>
+            </div>
+
+            <div class="details">
+              <p>
+                The online presence of a business can be made or broken by
+                various factors, one of those crucial factors is a website. A
+                website is not merely a page lost on the internet, It is a hub
+                for your daily transactions and a selling point for your entity.
+                Allow me to sell your idea for you... digitally.
+              </p>
+              <div class="reference">
+                <a
+                  href="https://www.sumologic.com/glossary/web-application-development/#:~:text=Web%20application%20development%20describes%20the,or%20customers%20via%20the%20internet."
+                  target="_blank"
+                  title="A sumologic webpage that describes web applications development">
+                  Learn More about web app development
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Services Section End-->
+      <!--Projects Section Start-->
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <div class="project-content">
             <img
-              src="Images/Marcus.webp"
-              alt="This is my webiste profile picture"
-              id="Tino" />
-          </div>
-          <div class="AboutC2">
-            <h3 class="subTitle">About Me</h3>
-            <p>
-              I am student currently pursuing a Bachelor of Information
-              Technology degree. My journey in Information Technology began in
-              high school, where I established a strong foundation in the field.
-              I have programmed in numerous developing environments using
-              various languages but my strength lies with C#. To me, programming
-              is the process of overcoming a video game boss: seldom do you get
-              it the initial attempts, but through persistence, you level up ⬆
-              and succeed. I am here to help you overcome the problem.
-            </p>
-            <div class="Extra">
-              <p
-                class="Viewpoint Activepoint"
-                id="TechStack"
-                onclick="show('Skills')">
-                Tech Stack
+              src="Images/SeventhFloorMedia.webp"
+              alt="This is a fictional newspaper publication company built by Tinotenda Mhedziso" />
+            <div class="overlay-info">
+              <h3>Seventh Floor Media Limited</h3>
+
+              <p>
+                A fictional company website built on the concept of modern
+                newspaper publication through a dark lense. Current Version:
+                Released Built with: HTML5,CSS and JavaScript Development
+                Environment: Visual Studio Code Author:@PassionOverPain
               </p>
-              <p class="Viewpoint" id="Education" onclick="show('School')">
-                Education
-              </p>
-              <p class="Viewpoint" id="Experience" onclick="show('Work')">
-                Experience
-              </p>
-            </div>
-            <div class="View Activeview" id="Skills">
-              <ul class="Programming">
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=cs"
-                    alt="This is C#" />
-                  C#
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=css"
-                    alt="This is CSS" />
-                  CSS3
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=github"
-                    alt="This is GitHub" />
-                  GitHub
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=html"
-                    alt="This is HTML" />
-                  HTML5
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=js"
-                    alt="This is JavaScript" />
-                  JavaScript
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=mysql"
-                    alt="This is MySQL" />
-                  MySQL
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=r"
-                    alt="This is RStudio" />
-                  RStudio
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=unity"
-                    alt="This is Unity" />
-                  Unity
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=visualstudio"
-                    alt="This is Visual Sstudio" />
-                  Visual Studio
-                </li>
-                <li>
-                  <img
-                    class="language"
-                    src="https://skillicons.dev/icons?i=vscode"
-                    alt="This is Visual Studio Code" />
-                  Visual Studio Code
-                </li>
-                <br />
-              </ul>
-            </div>
-            <div class="View" id="School">
-              <ul>
-                <li>
-                  <span style="color: #0f0"
-                    >High School: Victoria Park High [2018 ~ 2022]</span
-                  >
-                </li>
-                <ul>
-                  <br />
-                  Academic Awards:
-                  <li>Academic top 10</li>
-                  <li>Head Prefect</li>
-                  <li>President of The Representative Council of Learners</li>
-                  <br />
-                </ul>
-                <ul>
-                  Academic Activites:
-                  <li>Chess</li>
-                  <li>Robotics and Coding</li>
-                  <br />
-                </ul>
-                <li>
-                  <span style="color: #0f0"
-                    >Nelson Mandela University [2023 ~ 2025]</span
-                  >
-                </li>
-                <ul>
-                  Bachelor's degree in Information Technology Academic
-                  Activites:
-                  <li>Computer Society Executive</li>
-                  <br />
-                </ul>
-              </ul>
-            </div>
-            <div class="View" id="Work">
-              <ul>
-                <span style="color: #0f0">Society experience</span>
-                <li>Events Coordinator of the NMU Computer Society [2024]</li>
-                <span style="color: #0f0">Working experience</span>
-                <li>Oasis Infobyte Junior Web Development Intern [2024]</li>
-                <br />
-              </ul>
+
+              <a
+                class="eye"
+                href="https://passionoverpain.github.io/SeventhFloorMedia/"
+                target="_blank"
+                title="View My Seventh Floor Media Project">
+                <i class="fas fa-eye"></i>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-      <!-------------------------------------------Services--------------------------------------------------------------------------------------------->
-      <section class="Services" id="ServicesSection">
-        <h3 class="subTitle">My Services</h3>
-        <div class="servicesList">
-          <div>
-            <ion-icon name="game-controller-outline"></ion-icon>
-            <h2>Basic Game Development</h2>
-            <p>
-              Game development is the art of creating innovative applications
-              that offer a level of challenge and reward the Player for
-              overcoming that challenge. I do not offer this service
-              professionally rather as a hobby, I craft story driven concepts
-              into entertaining creations.
-            </p>
-            <a
-              href="https://www.freecodecamp.org/news/what-is-game-development/"
-              target="_blank"
-              title="This is a link to a freecodecamp webpage that describes game development"
-              >Learn More about game development</a
-            >
-          </div>
-          <div>
-            <ion-icon name="cloud-upload-outline"></ion-icon>
-            <h2>Database Design and Development</h2>
-            <p>
-              In a data centered age, Databases facilitate the storage,
-              retrieval and manipulation of Important Information to ensure the
-              results are obtained timeously. As a Database administrator, I
-              ensure that the data warehousing of your entity is optimised and
-              operational at all times.
-            </p>
-            <a
-              href="https://webheadtech.com/blog/database-development/#:~:text=Database%20development%20is%20designing%2C%20creating,meet%20the%20needs%20of%20business."
-              target="_blank"
-              title="This is a link to a webheadtech webpage that describes database development"
-              >Learn More about database development</a
-            >
-          </div>
-          <div>
-            <ion-icon name="logo-windows"></ion-icon>
-            <h2>Windows Applications Development</h2>
-            <p>
-              Windows is the most used operating system currently and the
-              software that is available for Windows grows extensively by the
-              minute. Modernise your business entity by including desktop
-              application for a more professional experience.
-            </p>
-            <a
-              href="https://syndelltech.com/steps-to-develop-windows-application/#:~:text=Windows%20application%20development%20refers%20to,systems%20and%20immersive%20multimedia%20experiences."
-              target="_blank"
-              title="This is a link to a syndeltech webpage that defines what windows applications development is"
-              >Learn More about windows app development</a
-            >
-          </div>
-          <div>
-            <ion-icon name="earth-outline"></ion-icon>
-            <h2>Web Applications Development</h2>
-            <p>
-              The online presence of a business can be made or broken by various
-              factors, one of those crucial factors is a website. A website is
-              not merely a page lost on the internet, It is a hub for your daily
-              transactions and a selling point for your entity. Allow me to sell
-              your idea for you... digitally.
-            </p>
-            <a
-              href="https://www.sumologic.com/glossary/web-application-development/#:~:text=Web%20application%20development%20describes%20the,or%20customers%20via%20the%20internet."
-              target="_blank"
-              title="A sumologic webpage that describes web applications development"
-              >Learn More about web app development</a
-            >
+
+        <div class="project">
+          <div class="project-content">
+            <img
+              src="Images/TheLearningCurve.webp"
+              alt="This is a real Tutoring company built by Tinotenda Mhedziso" />
+            <div class="overlay-info">
+              <h3>The Learning Curve</h3>
+
+              <p>
+                The Learning Curve is a tutoring company owned by
+                <a
+                  href="https://www.linkedin.com/in/lance-kupeta-19aa65105/"
+                  title="View Lance Kupeta's LinkedIn">
+                  Lance Kupeta
+                </a>
+                . Their team is loacated in Johannesburg and offer comprehensive
+                academic classes. I have built The Learning Curve website and
+                continue to integrate new functionality. Current Version:
+                Released Built with: HTML5,CSS3, Email Js and JavaScript
+                Development Environment: Visual Studio Code
+                Author:@PassionOverPain, @LanceKupeta (Founder)
+              </p>
+
+              <a
+                class="eye"
+                href="https://passionoverpain.github.io/TheLearningCurve/"
+                title="My Seventh Floor Media Project"
+                target="_blank">
+                <i class="fas fa-eye"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-      <!------------------------------------------------Projects---------------------------------------------------------------------------------------->
-      <section class="Projects" id="ProjectsSection">
-        <div class="container">
-          <h3 class="subTitle">My Projects</h3>
-          <div class="projectsList">
-            <div class="project">
-              <img
-                src="Images/SeventhFloorMedia.webp"
-                alt="This is a fictional newspaper publication company built by Tinotenda Mhedziso" />
-              <div class="layer">
-                <h3>Seventh Floor Media Limited</h3>
-                <p>
-                  A fictional company website built on the concept of modern
-                  newspaper publication through a dark lense. <br />
-                  Current Version: Released <br />
-                  Built with: HTML5,CSS and JavaScript <br />
-                  Development Environment: Visual Studio Code <br />
-                  Author:@PassionOverPain
-                </p>
-                <a
-                  class="eye"
-                  href="https://passionoverpain.github.io/SeventhFloorMedia/"
-                  target="_blank"
-                  title="View My Seventh Floor Media Project"
-                  ><ion-icon name="eye-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-            <div class="project">
-              <img
-                src="Images/TheLearningCurve.webp"
-                alt="This is a real Tutoring company built by Tinotenda Mhedziso" />
-              <div class="layer">
-                <h3>The Learning Curve</h3>
-                <p>
-                  The Learning Curve is a tutoring company owned by
-                  <a
-                    class="person"
-                    href="https://www.linkedin.com/in/lance-kupeta-19aa65105/"
-                    title="View Lance Kupeta's LinkedIn"
-                    >Lance Kupeta</a
-                  >. Their team is loacated in Johannesburg and offer
-                  comprehensive academic classes. I have built The Learning
-                  Curve website and continue to integrate new functionality.
-                  <br />
-                  Current Version: Released<br />
-                  Built with: HTML5,CSS3, Email Js and JavaScript <br />
-                  Development Environment: Visual Studio Code <br />
-                  Author:@PassionOverPain, @LanceKupeta (Founder)
-                </p>
-                <a
-                  class="eye"
-                  href="https://passionoverpain.github.io/TheLearningCurve/"
-                  title="My Seventh Floor Media Project"
-                  target="_blank"
-                  ><ion-icon name="eye-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-            <div class="project">
-              <img
-                src="Images/CreateIT.webp"
-                alt="This is a budget friendly
-              application Prototype built by Tinotenda Mhedziso"
-                id="CreateIT" />
-              <div class="layer">
-                <h3>CreateIT</h3>
-                <p>
-                  CreateIT is a budget friendly application built on the concept
-                  that users can create reciepes based on ingriedents that they
-                  currently have. <br />
-                  Current Version: Prototype <br />
-                  Built with: C#<br />
-                  Development Environment: Visual Studio <br />
-                  Author:@PassionOverPain
-                </p>
-                <a
-                  class="eye"
-                  href="https://github.com/PassionOverPain/CreateTech"
-                  target="_blank"
-                  title="View My CreateIT prototype"
-                  ><ion-icon name="eye-outline"></ion-icon
-                ></a>
-              </div>
+
+        <div class="project">
+          <div class="project-content">
+            <img
+              src="Images/CreateIT.webp"
+              alt="This is a budget friendly application built by Tinotenda Mhedziso" />
+            <div class="overlay-info">
+              <h3>CreateIT</h3>
+
+              <p>
+                CreateIT is a budget friendly application built on the concept
+                that users can create reciepes based on ingriedents that they
+                currently have. Current Version: Prototype Built with: C#
+                Development Environment: Visual Studio Author:@PassionOverPain
+              </p>
+
+              <a
+                class="eye"
+                href="https://github.com/PassionOverPain/CreateTech"
+                title="View My CreateIT prototype"
+                target="_blank">
+                <i class="fas fa-eye"></i>
+              </a>
             </div>
           </div>
-          <a
-            href="https://www.github.com/PassionOverPain"
-            class="btn"
-            target="_blank"
-            >View Github</a
-          >
         </div>
-      </section>
-      <!------------------------------------------------Contact---------------------------------------------------------------------------------------->
-    </main>
-    <footer>
-      <section class="Contact" id="ContactSection">
-        <div class="container">
-          <h3 class="subTitle">Contact Me</h3>
-          <a href="mailto:tinomhedziso21@gmail.com">
-            <p class="email">
-              For <span style="color: #04fc43">Any</span> Inquiries <br />
-              Email:tinomhedziso21@gmail.com
-            </p>
+
+        <div class="btns">
+
+          <a href="https://www.github.com/PassionOverPain" target="_blank">
+            View All Projects
           </a>
-          <div class="Social-Icons">
-            <a
-              href="https://www.linkedin.com/in/tinotenda-mhedziso/"
-              target="_blank"
-              ><ion-icon
-                name="logo-linkedin"
-                title="My LinkedIn profile"></ion-icon
-            ></a>
-            <a href="https://www.github.com/PassionOverPain"
-              ><ion-icon name="logo-github" title="My GitHub profile"></ion-icon
-            ></a>
-          </div>
-          <p class="Copyright">
-            All Rights Reserved © under Tinotenda Mhedziso
-          </p>
+
         </div>
       </section>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/2e1f3e65-ea48-48d4-bf96-eb204d7e61bb/webchat/v2/config.js"></script>
-    <script type="text/javascript" src="function.js"></script>
+      <!--Projects Section End-->
+      <!--Contact Section Start-->
+
+      <!--Contact Section End-->
+    </main>
+
+    <!--Footer Section Start-->
+    <!--Footer Section End-->
   </body>
 </html>
+
+<!-- Nvim Command to convert Multiline to Single Line for p -->
+<!-- :%s/<p>\_.\{-}<\/p>/\=substitute(substitute(submatch(0), '\n\|\r', '', 'g'), '\s\+', ' ', 'g')/g -->
+<!-- Format Again To Convert into Multilines -->
