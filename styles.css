@@ -50,7 +50,9 @@ body {
   width: 100%;
 }
 
-.flex-center {
+.flex-center,
+section,
+.services .card .card-content .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,12 +60,6 @@ body {
 
 .column {
   flex-direction: column;
-}
-
-.shadow {
-  box-shadow:
-    0 0 5px var(--tertiary-color),
-    0 0 15px var(--tertiary-color);
 }
 
 .t-shadow {
@@ -82,10 +78,7 @@ main {
 
 /* Styles for section */
 section {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 2rem 0;
   overflow: hidden;
@@ -112,11 +105,16 @@ section {
 }
 
 .hero .hero-content h1 span {
-  color: var(--tertiary-color);
+  font-family: var(--font-secondary);
+}
+
+.hero .hero-content h1 span,
+.hero .hero-content .btns a,
+.projects .btns a {
   text-transform: uppercase;
   font-weight: 700;
-  font-family: var(--font-secondary);
   letter-spacing: 0.1rem;
+  color: var(--tertiary-color);
 }
 
 .hero .hero-content h4 {
@@ -137,12 +135,8 @@ section {
 .hero .hero-content .btns a {
   padding: 0.5rem 1rem;
   border: 2px solid var(--tertiary-color);
-  color: var(--tertiary-color);
   font-size: clamp(0.8rem, 2vw, 1rem);
-  font-weight: 700;
   border-radius: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
   transition: all 0.3s;
 }
 
@@ -169,20 +163,9 @@ section {
   padding: 2rem;
 }
 
-.about .about-content .info h2 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  letter-spacing: 0.1rem;
-}
-
-.about .about-content .info p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  text-align: center;
-}
-
-.about .about-content .info p a {
+.about .about-content .info p a,
+.services .card .card-content .details a,
+.projects .project .project-content .overlay-info a {
   color: var(--tertiary-color);
   text-decoration: underline;
 }
@@ -191,7 +174,8 @@ section {
 .school,
 .work,
 .services,
-.projects {
+.projects,
+.tech-stacks .icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +184,12 @@ section {
   padding: 2rem;
 }
 
-.tech-stacks h2 {
+.tech-stacks h2,
+.school h2,
+.work h2,
+.services h2,
+.projects h2,
+.about .about-content .info h2 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   text-transform: uppercase;
   font-weight: 700;
@@ -209,11 +198,7 @@ section {
 }
 
 .tech-stacks .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  padding: 0;
 }
 
 .tech-stacks .icons i,
@@ -235,15 +220,6 @@ section {
 .work {
   flex-direction: column;
   max-width: 70%;
-}
-
-.school h2,
-.work h2 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  letter-spacing: 0.1rem;
 }
 
 .school dl,
@@ -270,15 +246,8 @@ section {
   font-weight: 700;
 }
 
-.services h2 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  letter-spacing: 0.1rem;
-}
-
-.services .card {
+.services .card,
+.projects .project {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,7 +259,8 @@ section {
   transition: all 0.3s;
 }
 
-.services .card:hover {
+.services .card:hover,
+.projects .project:hover {
   box-shadow:
     0 0 5px var(--tertiary-color),
     0 0 15px var(--tertiary-color);
@@ -304,9 +274,6 @@ section {
 }
 
 .services .card .card-content .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -324,46 +291,15 @@ section {
   letter-spacing: 0.1rem;
 }
 
-.services .card .card-content .details {
+.services .card .card-content .details,
+.services .card .card-content .details p,
+.about .about-content .info p {
   font-size: clamp(0.8rem, 2vw, 1rem);
   text-align: center;
-}
-
-.services .card .card-content .details p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  text-align: center;
-}
-
-.services .card .card-content .details a {
-  color: var(--tertiary-color);
-  text-decoration: underline;
-}
-
-.projects h2 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  letter-spacing: 0.1rem;
 }
 
 .projects .project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: #2c3e5055;
-  transition: all 0.3s;
   position: relative;
-}
-
-.projects .project:hover {
-  box-shadow:
-    0 0 5px var(--tertiary-color),
-    0 0 15px var(--tertiary-color);
 }
 
 .projects .project .project-content img {
@@ -404,19 +340,11 @@ section {
   text-align: center;
 }
 
-.projects .project .project-content .overlay-info a {
-  color: var(--tertiary-color);
-  text-decoration: underline;
-}
-
 .projects .project .project-content .overlay-info a:hover {
   color: var(--dark-brownish-green);
 }
 
 .projects .btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -424,16 +352,12 @@ section {
 .projects .btns a {
   padding: 0.5rem 1rem;
   border: 2px solid var(--tertiary-color);
-  color: var(--tertiary-color);
   font-size: clamp(0.8rem, 2vw, 1rem);
-  font-weight: 700;
   border-radius: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
   transition: all 0.3s;
 }
 
-.btns a:hover {
+.projects .btns a:hover {
   background-color: var(--tertiary-color);
   /* I would not recommend using this box-shadow on hover */
   box-shadow:
@@ -441,7 +365,6 @@ section {
     0 0 15px var(--tertiary-color);
   color: var(--secondary-color);
 }
-
 
 @media (max-width: 768px) {
   .school,
