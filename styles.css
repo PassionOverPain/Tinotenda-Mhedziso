@@ -165,7 +165,8 @@ section {
 
 .about .about-content .info p a,
 .services .card .card-content .details a,
-.projects .project .project-content .overlay-info a {
+.projects .project .project-content .overlay-info a 
+.contact .mail a{
   color: var(--tertiary-color);
   text-decoration: underline;
 }
@@ -175,6 +176,8 @@ section {
 .work,
 .services,
 .projects,
+.contact,
+.contact .socials,
 .tech-stacks .icons {
   display: flex;
   justify-content: center;
@@ -189,7 +192,8 @@ section {
 .work h2,
 .services h2,
 .projects h2,
-.about .about-content .info h2 {
+.about .about-content .info h2,
+.contact h2 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   text-transform: uppercase;
   font-weight: 700;
@@ -202,7 +206,8 @@ section {
 }
 
 .tech-stacks .icons i,
-.tech-stacks .icons svg {
+.tech-stacks .icons svg,
+.contact .socials a{
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: var(--tertiary-color);
   filter: drop-shadow(0 0 5px var(--tertiary-color));
@@ -210,7 +215,8 @@ section {
 }
 
 .tech-stacks .icons i:hover,
-.tech-stacks .icons svg:hover {
+.tech-stacks .icons svg:hover,
+.contact .socials a:hover {
   color: var(--dark-brownish-green);
   filter: drop-shadow(0 0 5px var(--dark-brownish-green));
   fill: var(--dark-brownish-green);
@@ -273,17 +279,20 @@ section {
   gap: 1rem;
 }
 
-.services .card .card-content .header {
+.services .card .card-content .header,
+.contact .mail a{
   gap: 1rem;
 }
 
-.services .card .card-content .header i {
+.services .card .card-content .header i,
+.contact .mail a i{
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: var(--tertiary-color);
   filter: drop-shadow(0 0 5px var(--tertiary-color));
 }
 
-.services .card .card-content .header h3 {
+.services .card .card-content .header h3,
+.contact .mail a{
   font-size: clamp(1rem, 3vw, 1.5rem);
   text-transform: uppercase;
   font-weight: 700;
@@ -364,6 +373,13 @@ section {
     0 0 5px var(--tertiary-color),
     0 0 15px var(--tertiary-color);
   color: var(--secondary-color);
+}
+
+footer {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
