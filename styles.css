@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
   --font-primary: 'Open Sans', sans-serif;
@@ -20,6 +19,7 @@
 a {
   text-decoration: none;
 }
+
 img {
   width: 100%;
   height: auto;
@@ -33,10 +33,6 @@ strong {
   font-weight: 700;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-primary);
   background-color: var(--primary-color);
@@ -48,6 +44,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 .flex-center,
@@ -124,7 +121,8 @@ section {
   padding-left: clamp(0.5rem, 2vw, 1rem);
 }
 
-.hero .hero-content .btns {
+.hero .hero-content .btns,
+.projects .btns {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +163,7 @@ section {
 
 .about .about-content .info p a,
 .services .card .card-content .details a,
-.projects .project .project-content .overlay-info a 
+.projects .projects-div .project .project-content .overlay-info a 
 .contact .mail a{
   color: var(--tertiary-color);
   text-decoration: underline;
@@ -176,6 +174,7 @@ section {
 .work,
 .services,
 .projects,
+.projects .projects-div,
 .contact,
 .contact .socials,
 .tech-stacks .icons {
@@ -201,7 +200,8 @@ section {
   letter-spacing: 0.1rem;
 }
 
-.tech-stacks .icons {
+.tech-stacks .icons,
+.projects .projects-div {
   padding: 0;
 }
 
@@ -253,7 +253,7 @@ section {
 }
 
 .services .card,
-.projects .project {
+.projects .projects-div .project {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,7 +266,7 @@ section {
 }
 
 .services .card:hover,
-.projects .project:hover {
+.projects .projects-div .project:hover {
   box-shadow:
     0 0 5px var(--tertiary-color),
     0 0 15px var(--tertiary-color);
@@ -307,19 +307,21 @@ section {
   text-align: center;
 }
 
-.projects .project {
+.projects .projects-div .project {
   position: relative;
+  width: clamp(10rem, 30vw, 20rem);
 }
 
-.projects .project .project-content img {
+.projects .projects-div .project .project-content img {
   border-radius: 1rem;
+  max-height: clamp(10rem, 30vw, 20rem);
 }
 
-.projects .project .project-content img:hover ~ .overlay-info {
+.projects .projects-div .project .project-content img:hover ~ .overlay-info {
   display: flex;
 }
 
-.projects .project .project-content .overlay-info {
+.projects .projects-div .project .project-content .overlay-info {
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -336,7 +338,7 @@ section {
   width: 100%;
 }
 
-.projects .project .project-content .overlay-info h3 {
+.projects .projects-div .project .project-content .overlay-info h3 {
   font-size: clamp(1rem, 3vw, 1.5rem);
   text-transform: uppercase;
   font-weight: 700;
@@ -344,12 +346,12 @@ section {
   letter-spacing: 0.1rem;
 }
 
-.projects .project .project-content .overlay-info p {
-  font-size: clamp(0.4rem, 2vw, 1rem);
+.projects .projects-div .project .project-content .overlay-info p {
+  font-size: clamp(0.2rem, 1.3vw, .6rem);
   text-align: center;
 }
 
-.projects .project .project-content .overlay-info a:hover {
+.projects .projects-div .project .project-content .overlay-info a:hover {
   color: var(--dark-brownish-green);
 }
 
