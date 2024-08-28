@@ -22,3 +22,10 @@ applyAnimation('.about');
 applyAnimation('.services');
 applyAnimation('.projects');
 applyAnimation('.contact');
+
+const toggle = document.querySelector('.nav-toggle');
+const icons = document.querySelector('.icons');
+
+toggle.addEventListener('click', () => {
+    icons.classList.toggle('active');
+});

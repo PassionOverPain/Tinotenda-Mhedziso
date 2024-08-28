@@ -10,7 +10,7 @@
   --dark-brownish-green: #2c3e50;
 }
 
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +65,7 @@ section,
     0 0 3px var(--primary-color);
 }
 
-/* Styles for main */
+
 main {
   align-items: center;
   flex-direction: column;
@@ -73,7 +73,7 @@ main {
   min-height: 100vh;
 }
 
-/* Styles for section */
+
 section {
   flex-direction: column;
   width: 100%;
@@ -81,7 +81,7 @@ section {
   overflow: hidden;
 }
 
-/* Styles for hero */
+
 .hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
@@ -140,14 +140,14 @@ section {
 
 .hero .hero-content .btns a:hover {
   background-color: var(--tertiary-color);
-  /* I would not recommend using this box-shadow on hover */
+  
   box-shadow:
     0 0 5px var(--tertiary-color),
     0 0 15px var(--tertiary-color);
   color: var(--secondary-color);
 }
 
-/* Styles for about */
+
 .about {
   padding: clamp(2rem, 5vw, 5rem) 0;
 }
@@ -370,7 +370,7 @@ section {
 
 .projects .btns a:hover {
   background-color: var(--tertiary-color);
-  /* I would not recommend using this box-shadow on hover */
+  
   box-shadow:
     0 0 5px var(--tertiary-color),
     0 0 15px var(--tertiary-color);
@@ -389,4 +389,76 @@ footer {
   .work {
     max-width: 100%;
   }
+}
+
+
+header{
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; 
+    background: transparent; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1010; 
+}
+
+.nav-toggle i {
+    font-size: 2rem;
+    color: var(--tertiary-color);
+}
+
+
+.icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+
+
+.icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.3s, transform 0.5s;
+}
+
+.icon a i {
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+}
+
+
+.icons.active .icon {
+    opacity: 1;
+    animation: iconMove 0.5s forwards;
+}
+
+
+@keyframes iconMove {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(calc(var(--i) * 51.4286deg)) translate(100px) rotate(calc(-1 * var(--i) * 51.4286deg));
+    }
 }
