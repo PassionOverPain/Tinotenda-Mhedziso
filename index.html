@@ -20,61 +20,64 @@
     <title>Tinotenda Mhedziso's portfolio website</title>
   </head>
   <body>
-    <div class='header'>
-      <div class="nav-toggle">
-        <i class="fas fa-times"></i>
-      </div>
-      <div class="icons">
-        <div class="icon" style="--i: 1;">
-          <a
-            href="https://www.linkedin.com/in/tinotenda-mhedziso-0b1b3b1b5/"
-            target="_blank"
-            title="View Tinotenda Mhedziso's LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="icon" style="--i: 2;">
-          <a
-            href="https://www.github.com/PassionOverPain"
-            target="_blank"
-            title="View Tinotenda Mhedziso's GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <div class="icon" style="--i: 3;">
-          <a href="mailto:tinomhedziso21@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-        <div class="icon" style="--i: 4;">
-          <a href="#about">
-            <i class="fas fa-info"></i>
-          </a>
-        </div>
-        <div class="icon" style="--i: 5;">
-          <a href="#services">
-            <i class="fas fa-tasks"></i>
-          </a>
-        </div>
-        <div class="icon" style="--i: 6;">
-          <a href="#projects">
-            <i class="fas fa-project-diagram"></i>
-          </a>
-        </div>
-        <div class="icon" style="--i: 7;">
-          <a
-            href="Documents/TinotendaMhedziso-CV.pdf"
-            download
-            target="_blank"
-            title="Download Tinotenda Mhedziso's CV">
-            <i class="fas fa-address-book"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <header>
+      <nav>
+        <ul class="menu">
+          <div class="menuToggle">
+            <i class="fas fa-times"></i>
+          </div>
+          <li style="--i: 0; --clr: #04fc43">
+            <a href="#">
+              <i class="fas fa-home" title="Home"></i>
+            </a>
+          </li>
+          <li style="--i: 1; --clr: #04fc43">
+            <a href="#about">
+              <i class="fas fa-user" title="About"></i>
+            </a>
+          </li>
+          <li style="--i: 2; --clr: #04fc43">
+            <a href="#services">
+              <i class="fas fa-cogs" title="Services"></i>
+            </a>
+          </li>
+          <li style="--i: 3; --clr: #04fc43">
+            <a href="#projects">
+              <i class="fas fa-project-diagram" title="Projects"></i>
+            </a>
+          </li>
+          <li style="--i: 4; --clr: #04fc43">
+            <a href="mailto:tinomhedziso21@gmail.com">
+              <i class="fas fa-envelope" title="Email Me"></i>
+            </a>
+          </li>
+          <li style="--i: 5; --clr: #04fc43">
+            <a
+              href="https://www.linkedin.com/in/tinotenda-mhedziso/"
+              target="_blank">
+              <i class="fab fa-linkedin" title="My LinkedIn profile"></i>
+            </a>
+          </li>
+          <li style="--i: 6; --clr: #04fc43">
+            <a href="https://www.github.com/PassionOverPain" target="_blank">
+              <i class="fab fa-github" title="My GitHub profile"></i>
+            </a>
+          </li>
+          <li style="--i: 7; --clr: #04fc43">
+            <a
+              href="Documents/TinotendaMhedziso-CV.pdf"
+              download
+              target="_blank">
+              <i class="fas fa-file-download" title="Download My CV"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <main class="flex-center column">
       <!-- Hero Section Start -->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero-content">
           <h3>Hey,</h3>
           <h1>
@@ -91,11 +94,21 @@
       <!-- Hero Section End -->
 
       <!-- About Section Start -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-content flex-center column">
           <div class="info flex-center column">
             <h2>About Me</h2>
-            <p> I'm pursuing a <strong>Bachelor of Information Technology</strong> and have a strong foundation from <a href="#high-school">high school</a> . My main strength is <strong>C#</strong> . Programming is like defeating a tough video game boss: challenging but achievable with persistence. I'm here to help with any challenges. </p>
+            <p>
+              I'm pursuing a
+              <strong>Bachelor of Information Technology</strong>
+              and have a strong foundation from
+              <a href="#high-school">high school</a>
+              . My main strength is
+              <strong>C#</strong>
+              . Programming is like defeating a tough video game boss:
+              challenging but achievable with persistence. I'm here to help with
+              any challenges.
+            </p>
           </div>
           <!--You can Add Image here-->
         </div>
@@ -170,7 +183,7 @@
       </section>
       <!-- About Section End -->
       <!--Services Section Start-->
-      <section class="services">
+      <section class="services" id="services">
         <h2>Services</h2>
         <div class="card">
           <div class="card-content">
@@ -180,7 +193,13 @@
             </div>
 
             <div class="details">
-              <p> Game development is the art of creating innovative applications that offer a level of challenge and reward the Player for overcoming that challenge. I do not offer this service professionally rather as a hobby, I craft story driven concepts into entertaining creations. </p>
+              <p>
+                Game development is the art of creating innovative applications
+                that offer a level of challenge and reward the Player for
+                overcoming that challenge. I do not offer this service
+                professionally rather as a hobby, I craft story driven concepts
+                into entertaining creations.
+              </p>
               <div class="reference">
                 <a
                   href="https://www.freecodecamp.org/news/what-is-game-development/"
@@ -200,7 +219,13 @@
             </div>
 
             <div class="details">
-              <p> In a data centered age, Databases facilitate the storage, retrieval and manipulation of Important Information to ensure the results are obtained timeously. As a Database administrator, I ensure that the data warehousing of your entity is optimised and operational at all times. </p>
+              <p>
+                In a data centered age, Databases facilitate the storage,
+                retrieval and manipulation of Important Information to ensure
+                the results are obtained timeously. As a Database administrator,
+                I ensure that the data warehousing of your entity is optimised
+                and operational at all times.
+              </p>
               <div class="reference">
                 <a
                   href="https://webheadtech.com/blog/database-development/#:~:text=Database%20development%20is%20designing%2C%20creating,meet%20the%20needs%20of%20business."
@@ -221,7 +246,12 @@
             </div>
 
             <div class="details">
-              <p> Windows is the most used operating system currently and the software that is available for Windows grows extensively by the minute. Modernise your business entity by including desktop application for a more professional experience. </p>
+              <p>
+                Windows is the most used operating system currently and the
+                software that is available for Windows grows extensively by the
+                minute. Modernise your business entity by including desktop
+                application for a more professional experience.
+              </p>
               <div class="reference">
                 <a
                   href="https://syndelltech.com/steps-to-develop-windows-application/#:~:text=Windows%20application%20development%20refers%20to,systems%20and%20immersive%20multimedia%20experiences."
@@ -242,7 +272,13 @@
             </div>
 
             <div class="details">
-              <p> The online presence of a business can be made or broken by various factors, one of those crucial factors is a website. A website is not merely a page lost on the internet, It is a hub for your daily transactions and a selling point for your entity. Allow me to sell your idea for you... digitally. </p>
+              <p>
+                The online presence of a business can be made or broken by
+                various factors, one of those crucial factors is a website. A
+                website is not merely a page lost on the internet, It is a hub
+                for your daily transactions and a selling point for your entity.
+                Allow me to sell your idea for you... digitally.
+              </p>
               <div class="reference">
                 <a
                   href="https://www.sumologic.com/glossary/web-application-development/#:~:text=Web%20application%20development%20describes%20the,or%20customers%20via%20the%20internet."
@@ -257,7 +293,7 @@
       </section>
       <!--Services Section End-->
       <!--Projects Section Start-->
-      <section class="projects column">
+      <section class="projects column" id="projects">
         <h2>Projects</h2>
         <div class="projects-div">
           <div class="project">
@@ -268,7 +304,12 @@
               <div class="overlay-info">
                 <h3>Seventh Floor Media Limited</h3>
 
-                <p> A fictional company website built on the concept of modern newspaper publication through a dark lense. Current Version: Released Built with: HTML5,CSS and JavaScript Development Environment: Visual Studio Code Author:@PassionOverPain </p>
+                <p>
+                  A fictional company website built on the concept of modern
+                  newspaper publication through a dark lense. Current Version:
+                  Released Built with: HTML5,CSS and JavaScript Development
+                  Environment: Visual Studio Code Author:@PassionOverPain
+                </p>
 
                 <a
                   class="eye"
@@ -289,7 +330,20 @@
               <div class="overlay-info">
                 <h3>The Learning Curve</h3>
 
-                <p> The Learning Curve is a tutoring company owned by <a href="https://www.linkedin.com/in/lance-kupeta-19aa65105/" title="View Lance Kupeta's LinkedIn"> Lance Kupeta </a> . Their team is loacated in Johannesburg and offer comprehensive academic classes. I have built The Learning Curve website and continue to integrate new functionality. Current Version: Released Built with: HTML5,CSS3, Email Js and JavaScript Development Environment: Visual Studio Code Author:@PassionOverPain, @LanceKupeta (Founder) </p>
+                <p>
+                  The Learning Curve is a tutoring company owned by
+                  <a
+                    href="https://www.linkedin.com/in/lance-kupeta-19aa65105/"
+                    title="View Lance Kupeta's LinkedIn">
+                    Lance Kupeta
+                  </a>
+                  . Their team is loacated in Johannesburg and offer
+                  comprehensive academic classes. I have built The Learning
+                  Curve website and continue to integrate new functionality.
+                  Current Version: Released Built with: HTML5,CSS3, Email Js and
+                  JavaScript Development Environment: Visual Studio Code
+                  Author:@PassionOverPain, @LanceKupeta (Founder)
+                </p>
 
                 <a
                   class="eye"
@@ -310,7 +364,12 @@
               <div class="overlay-info">
                 <h3>CreateIT</h3>
 
-                <p> CreateIT is a budget friendly application built on the concept that users can create reciepes based on ingriedents that they currently have. Current Version: Prototype Built with: C# Development Environment: Visual Studio Author:@PassionOverPain </p>
+                <p>
+                  CreateIT is a budget friendly application built on the concept
+                  that users can create reciepes based on ingriedents that they
+                  currently have. Current Version: Prototype Built with: C#
+                  Development Environment: Visual Studio Author:@PassionOverPain
+                </p>
 
                 <a
                   class="eye"
@@ -361,7 +420,10 @@
       <!--Contact Section End-->
     </main>
     <footer>
-      <p> &copy; 2024 Tinotenda Mhedziso. All Rights Reserved. Designed by Tinotenda Mhedziso </p>
+      <p>
+        &copy; 2024 Tinotenda Mhedziso. All Rights Reserved. Designed by
+        Tinotenda Mhedziso
+      </p>
     </footer>
 
     <!--Footer Section Start-->
@@ -372,6 +434,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="animations.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>
 
