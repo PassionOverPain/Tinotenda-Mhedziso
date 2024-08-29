@@ -62,6 +62,7 @@ html /* Very useful simple line of code down below ✔*/ {
   justify-content: center;
   align-items: center;
   z-index: 100000; /*This is what I was looking for ;)*/
+  transition: all 0.5s;
 }
 .menu li {
   position: absolute;
