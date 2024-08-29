@@ -37,7 +37,7 @@ html /* Very useful simple line of code down below ✔*/ {
   color: #0f0;
   text-align: center;
   align-items: center;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 #Loading {
