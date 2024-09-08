@@ -544,7 +544,7 @@ h1:hover span {
   filter: blur(0);
   transform: translateX(0);
 }
-#Anime {
+.btn {
   position: relative;
   display: inline-block;
   margin-top: 5%;
