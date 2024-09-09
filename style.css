@@ -310,11 +310,7 @@ h1:hover span {
 .language {
   filter: grayscale(1.2);
   width: 5vw;
-  display: block; /*This might cause some issues elsewhere...*/
-  animation-name: floaty;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
+  display: block;
 }
 @keyframes floaty {
   50% {
@@ -534,6 +530,8 @@ h1:hover span {
   font-size: 70px;
   display: inline-block;
   margin-top: 1%;
+}
+.animate {
   animation-name: floaty;
   animation-duration: 5s;
   animation-iteration-count: infinite;

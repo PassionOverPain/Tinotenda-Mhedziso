@@ -21,14 +21,20 @@ function show(thingy) {
 let anime = true;
 const abutton = document.getElementById('Anime');
 abutton.addEventListener('click', animate);
-let languages = document.getElementsByClassName('language');
+let Icons = document.querySelectorAll('.Icon');
 function animate() {
   if (anime) {
+    for (i = 0; i < Icons.length; ++i) {
+      Icons[i].classList.remove('animate');
+    }
     anime = false;
     abutton.textContent = 'Animate✔';
     window.location.assign(abutton.value);
     setTimeout(backHome, 2000);
   } else {
+    for (i = 0; i < Icons.length; ++i) {
+      Icons[i].classList.add('animate');
+    }
     anime = true;
     abutton.textContent = 'Animate✖';
     window.location.assign(abutton.value);
@@ -57,12 +63,12 @@ var hiddenElements = document.querySelectorAll(
   '.Projects, .AboutMe, .Services'
 );
 hiddenElements.forEach((el) => observer.observe(el));
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function (load) {
+var loader = document.getElementById('preloader');
+window.addEventListener('load', function (load) {
   // Lazy Loading :) //
-  this.window.removeEventListener("load", load, false);
+  this.window.removeEventListener('load', load, false);
   this.setTimeout(function () {
-    loader.style.display = "none";
-    this.document.body.style.overflowY = "scroll";
+    loader.style.display = 'none';
+    this.document.body.style.overflowY = 'scroll';
   }, 2000);
 });
