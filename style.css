@@ -534,6 +534,10 @@ h1:hover span {
   font-size: 70px;
   display: inline-block;
   margin-top: 1%;
+  animation-name: floaty;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 .Copyright {
   color: white;
