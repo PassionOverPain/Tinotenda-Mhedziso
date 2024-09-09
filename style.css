@@ -559,6 +559,12 @@ h1:hover span {
   padding: 2%;
   border-radius: 10em;
 }
+#Git {
+  margin-top: 3%;
+  width: 10%;
+  padding: 1%;
+  left: 45%;
+}
 #Anime:hover {
   transform: scale(1.1);
 }
