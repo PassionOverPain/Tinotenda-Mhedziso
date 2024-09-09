@@ -12,7 +12,8 @@ This repository is the backend for my portfolio website that includes:
   Theme is based on my favourite color, a Peacock aesthetic and a video game/hacker type narrative
 
   # Preview 🖥
-  ![image](https://github.com/user-attachments/assets/b41c8d06-667a-48e0-80c8-0a03a57a4e79)
+  ![image](https://github.com/user-attachments/assets/c71cd9ab-bf07-43e4-9bd3-1396e38e43f3)
+
 
 # Build 👷🏿‍♂️
 <ul>
