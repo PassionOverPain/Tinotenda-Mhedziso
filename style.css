@@ -1,7 +1,7 @@
 /** @format */
 /* Fonts down below */
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,21 +10,21 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   color: gray;
   align-items: center;
   min-height: fit-content;
   background: #000000;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /* font-family: "Pixelify Sans", sans-serif; */
 }
 html /* Very useful simple line of code down below ✔*/ {
   scroll-behavior: smooth;
 }
 
-#preloader {
+/* #preloader {
   background-color: #000;
   background-image: url(Images/cat.gif);
   background-repeat: no-repeat;
@@ -34,19 +34,19 @@ html /* Very useful simple line of code down below ✔*/ {
   width: 100%;
   position: fixed;
   z-index: 1000000; /* hehe I know 🤣😅*/
-  color: #0f0;
+/* color: #0f0;
   text-align: center;
   align-items: center;
-  display: flex;
-  justify-content: center;
-}
+  display: none;
+  justify-content: center; */
+/* } */
 #Loading {
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   position: relative;
   top: 20%;
 }
 #Loading span {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .myName {
   color: white;
@@ -96,7 +96,7 @@ html /* Very useful simple line of code down below ✔*/ {
   color: var(--clr);
 }
 .menu li a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 20px;
   height: 2px;
@@ -128,7 +128,7 @@ html /* Very useful simple line of code down below ✔*/ {
   ); /*Might need to change 8 items*/
 }
 .menu li a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 80%;
   width: 20px;
@@ -174,7 +174,7 @@ header {
   background-size: cover;
   background-position: center;
   color: white;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 h1 {
   position: relative;
@@ -212,7 +212,7 @@ h1:hover span {
 }
 .Contactbtn::before {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   background: limegreen;
   top: 120%;
@@ -224,7 +224,7 @@ h1:hover span {
   opacity: 0.7;
 }
 .Contactbtn::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0%;
   right: 0;
@@ -277,13 +277,13 @@ h1:hover span {
   padding: 0.5%;
   position: relative;
   top: 0.5%;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 .AboutMe p {
   background-color: #001908;
   padding: 15px;
   border-radius: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   position: relative;
   top: 5%;
   font-size: 1.1rem;
@@ -330,24 +330,24 @@ h1:hover span {
 #TechStack {
   margin-right: 20px;
   cursor: pointer;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 #Education {
   margin-right: 20px;
   cursor: pointer;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 #Experience {
   margin-right: 20px;
   cursor: pointer;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 .View span {
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 
 .Viewpoint::after {
-  content: "";
+  content: '';
   width: 0px;
   height: 3px;
   background: #0f0;
@@ -402,7 +402,7 @@ h1:hover span {
   font-size: 30px;
   font-weight: 100;
   color: #fff;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 .servicesList div a {
   text-decoration: none;
@@ -469,7 +469,7 @@ h1:hover span {
   transition: height 0.5s;
 }
 .layer h3 {
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
   font-weight: 1000;
   margin-bottom: 20px;
 }
@@ -488,7 +488,7 @@ h1:hover span {
 .person {
   text-decoration: none;
   color: #0f0;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 .project:hover img {
   transform: scale(1.1);
@@ -544,10 +544,10 @@ h1:hover span {
   filter: blur(0);
   transform: translateX(0);
 }
-#Anime {
+.btn {
   position: relative;
   display: inline-block;
-  margin-top: 5%;
+  margin-top: 0%;
   width: 50%;
   size: 10%;
   background-color: transparent;
@@ -558,6 +558,12 @@ h1:hover span {
   color: #ffffff;
   padding: 2%;
   border-radius: 10em;
+}
+#Git {
+  margin-top: 3%;
+  width: 10%;
+  padding: 1%;
+  left: 45%;
 }
 #Anime:hover {
   transform: scale(1.1);
@@ -695,26 +701,17 @@ h1:hover span {
 
   #Me {
     font-size: 1.5em;
-    /* As bg is green and text is white but not visible */
     text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
   }
 
-  /* Buttons have small text and are not visible */
-  .Contactbtn {
-    font-size: 1.5em;
-    text-shadow: 0 0 0.125em rgb(3, 182, 146), 0 0 0.25em lime;
-  }
   .AboutMe .row {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
-
-  /* Make Image smaller */
   .row img {
     aspect-ratio: 1/1;
-    /* Image is dull and stretched */
     object-fit: cover;
     object-position: top;
   }
