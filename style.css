@@ -10,7 +10,7 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   color: gray;
   align-items: center;
   min-height: fit-content;
@@ -24,7 +24,7 @@ html /* Very useful simple line of code down below ✔*/ {
   scroll-behavior: smooth;
 }
 
-/* #preloader {
+#preloader {
   background-color: #000;
   background-image: url(Images/cat.gif);
   background-repeat: no-repeat;
@@ -34,12 +34,12 @@ html /* Very useful simple line of code down below ✔*/ {
   width: 100%;
   position: fixed;
   z-index: 1000000; /* hehe I know 🤣😅*/
-/* color: #0f0;
+  color: #0f0;
   text-align: center;
   align-items: center;
-  display: none;
-  justify-content: center; */
-/* } */
+  display: grid;
+  justify-content: center;
+}
 #Loading {
   font-family: 'Pixelify Sans', sans-serif;
   position: relative;
