@@ -565,7 +565,7 @@ h1:hover span {
   padding: 1%;
   left: 45%;
 }
-#Anime:hover {
+.btn:hover {
   transform: scale(1.1);
 }
 /*------------------------------------Responsive Design--------------------------------------------------------*/
