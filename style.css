@@ -184,12 +184,11 @@ h1 {
   font-weight: 500;
 }
 h1 span {
-  color: black;
   transition: 0.25s;
 }
 h1:hover span {
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
+  text-shadow: 0 0 5px rgb(1, 61, 1), 0 0 15px rgb(0, 78, 0),
+    0 0 30px rgb(2, 61, 2);
 }
 .Contactbtn {
   margin-top: 10%;
