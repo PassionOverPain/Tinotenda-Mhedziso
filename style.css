@@ -548,8 +548,6 @@ h1:hover span {
 }
 .btn {
   position: relative;
-  display: inline-block;
-  margin-top: 0%;
   width: 50%;
   size: 10%;
   background-color: transparent;
@@ -560,12 +558,6 @@ h1:hover span {
   color: #ffffff;
   padding: 2%;
   border-radius: 10em;
-}
-#Git {
-  margin-top: 3%;
-  width: 10%;
-  padding: 1%;
-  left: 45%;
 }
 .btn:hover {
   transform: scale(1.1);
