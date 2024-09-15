@@ -503,6 +503,11 @@ h1:hover span {
   color: white;
   transition: background-color 0.5s;
 }
+#Git {
+  padding: 7px;
+  min-width: fit-content;
+  width: 25%;
+}
 .btn:hover {
   background-color: #0f0;
 }
