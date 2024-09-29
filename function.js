@@ -28,7 +28,7 @@ function animate() {
       Icons[i].classList.remove('animate');
     }
     anime = false;
-    abutton.textContent = 'Animate✔';
+
     window.location.assign(abutton.value);
     setTimeout(backHome, 2000);
   } else {
@@ -36,7 +36,7 @@ function animate() {
       Icons[i].classList.add('animate');
     }
     anime = true;
-    abutton.textContent = 'Animate✖';
+
     window.location.assign(abutton.value);
     setTimeout(backHome, 2000);
   }
