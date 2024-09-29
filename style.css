@@ -169,12 +169,20 @@ header {
   align-items: center;
   position: relative;
   height: 100vh;
-  background-color: black;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+header::before {
+  content: '';
   background-image: url(Images/cyberspace.webp);
   background-size: cover;
   background-position: center;
-  color: white;
-  font-family: 'Pixelify Sans', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
 }
 h1 {
   position: relative;
@@ -495,7 +503,7 @@ h1:hover span {
   display: block;
   margin: 30px auto;
   width: fit-content;
-  border: 1px solid #001908;
+  border: 1px solid #0f0;
   padding: 14px;
   border-radius: 6px;
   text-decoration: none;
