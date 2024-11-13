@@ -250,7 +250,7 @@ h1:hover span {
 }
 .AboutMe {
   text-align: start;
-  background-color: rgb(0, 5, 4);
+
   height: fit-content;
   color: #ababab;
   flex-wrap: wrap;
@@ -421,7 +421,6 @@ h1:hover span {
   transform: translateY(-10px);
 }
 .Projects {
-  background-color: rgb(0, 5, 4);
   padding: 2px 0;
   text-align: start;
   height: fit-content;
