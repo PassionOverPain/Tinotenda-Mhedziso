@@ -14,6 +14,7 @@ This repository is the backend for my portfolio website that includes:
 - [Preview](https://github.com/PassionOverPain/Tinotenda-Mhedziso?tab=readme-ov-file#preview-)
 - [Build](https://github.com/PassionOverPain/Tinotenda-Mhedziso?tab=readme-ov-file#build-%EF%B8%8F)
 - [Contribution](https://github.com/PassionOverPain/Tinotenda-Mhedziso?tab=readme-ov-file#contribution-)
+- [My Chatbot](https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/06/17/20241206170532-B1MKLU7F.json)
 - [My Email](mailto:tinomhedziso21@gmail.com)
 - [My GitHub Profile](https://github.com/PassionOverPain)
 - [My LinkedIn](https://www.linkedin.com/in/tinotenda-mhedziso/)
