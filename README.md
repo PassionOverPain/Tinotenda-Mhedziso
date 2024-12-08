@@ -1,5 +1,5 @@
-# My Portfolio Website 🐱‍👤
-This repository is the backend for my portfolio website that includes:
+# My Portfolio Website 🦚
+My centralized portfolio website that encompasses the following:
 <ul>
   <li>A brief overview about me</li>
   <li>My services</li>
